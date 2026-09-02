@@ -1,6 +1,7 @@
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 
 const SELAR_TICKET_URL = 'https://selar.com/817383or48';
+const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
 
 const tracks = [
   {
@@ -291,7 +292,7 @@ export default function Home() {
 
             <a
               className="button button-yellow"
-              href={SELAR_TICKET_URL}
+              href={SELAR_VIP_URL}
               target="_blank"
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
