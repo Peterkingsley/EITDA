@@ -36,8 +36,8 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="EITDA home">
-          <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
-          <span><strong>EITDA</strong><small>by Eshiet Foundation</small></span>
+          <img src="/eshiet-foundation-full-logo.png" alt="Eshiet Foundation" />
+          <span><strong>EITDA</strong><small>Second Edition · 2026</small></span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#about">About</a><a href="#programme">Programme</a><a href="#tickets">Tickets</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
@@ -230,7 +230,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand">
-          <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
+          <img src="/eshiet-foundation-full-logo.png" alt="Eshiet Foundation" />
           <div><strong>EITDA</strong><span>Earning in the Digital Age</span></div>
         </div>
         <nav aria-label="Footer navigation">
