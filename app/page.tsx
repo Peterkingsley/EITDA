@@ -250,11 +250,43 @@ export default function Home() {
               <b>01</b>
             </div>
 
-            <strong>Free</strong>
+            <strong>
+              Free
+              <del
+                style={{
+                  marginLeft: '14px',
+                  fontSize: '0.28em',
+                  fontWeight: 750,
+                  letterSpacing: '-0.02em',
+                  opacity: 0.55,
+                  verticalAlign: 'middle',
+                }}
+              >
+                ₦5,000
+              </del>
+            </strong>
 
             <p>
               Join the EITDA 2026 learning experience at no ticket cost.
             </p>
+
+            <ul
+              aria-label="General admission benefits"
+              style={{
+                display: 'grid',
+                gap: '12px',
+                margin: '26px 0 34px',
+                padding: 0,
+                listStyle: 'none',
+                color: '#07101f',
+              }}
+            >
+              <li>✓ Full access to the main EITDA 2.0 event</li>
+              <li>✓ Access to speaker sessions and presentations</li>
+              <li>✓ Practical digital economy conversations and demonstrations</li>
+              <li>✓ General networking opportunities</li>
+              <li>✓ Access to participating brands and event experiences</li>
+            </ul>
 
             <a
               className="button button-yellow"
@@ -276,6 +308,18 @@ export default function Home() {
 
             <strong>
               <small>₦</small>15,000
+              <del
+                style={{
+                  marginLeft: '14px',
+                  fontSize: '0.28em',
+                  fontWeight: 750,
+                  letterSpacing: '-0.02em',
+                  opacity: 0.6,
+                  verticalAlign: 'middle',
+                }}
+              >
+                ₦50,000
+              </del>
             </strong>
 
             <p>
