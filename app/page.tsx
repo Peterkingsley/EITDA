@@ -14,6 +14,7 @@ const pathway = [
 
 const faqs = [
   ['What is EITDA?', 'Earning in the Digital Age is an Eshiet Foundation initiative designed to help young people understand, navigate, and benefit from the opportunities created by the digital economy.'],
+  ['Is this the first EITDA edition?', 'No. The upcoming event on 28 November 2026 is the second edition. The first edition was held in December 2025, and the photographs on this website are from that inaugural gathering.'],
   ['Who is the programme for?', 'EITDA is for curious young people who want practical exposure to digital work, enterprise, and the skills shaping today’s economy.'],
   ['Do I need previous experience?', 'No. The learning journey is designed to be approachable for beginners while still giving participants practical ideas they can build on.'],
   ['When and where is EITDA 2026?', 'EITDA takes place on Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom.'],
@@ -21,13 +22,13 @@ const faqs = [
 ];
 
 const galleryPhotos = [
-  { src: '/photos/session.jpg', alt: 'An EITDA learning session in progress', className: 'gallery-wide' },
-  { src: '/photos/community-four.jpg', alt: 'Members of the EITDA community together', className: 'gallery-standard' },
-  { src: '/photos/learning.jpg', alt: 'A participant focused during an EITDA session', className: 'gallery-tall' },
-  { src: '/photos/host.jpg', alt: 'An EITDA host smiling at the event', className: 'gallery-standard' },
-  { src: '/photos/stage-moment.jpg', alt: 'A stage moment shared by EITDA participants', className: 'gallery-standard' },
-  { src: '/photos/attendees.jpg', alt: 'Three EITDA attendees at the event', className: 'gallery-wide' },
-  { src: '/photos/connections.jpg', alt: 'Two members of the EITDA community', className: 'gallery-standard' },
+  { src: '/photos/session.jpg', alt: 'A learning session at the first EITDA edition in December 2025', className: 'gallery-wide' },
+  { src: '/photos/community-four.jpg', alt: 'Members of the EITDA community at the first edition', className: 'gallery-standard' },
+  { src: '/photos/learning.jpg', alt: 'A participant focused during the first EITDA edition', className: 'gallery-tall' },
+  { src: '/photos/host.jpg', alt: 'An EITDA host smiling at the first edition', className: 'gallery-standard' },
+  { src: '/photos/stage-moment.jpg', alt: 'A stage moment from the first EITDA edition', className: 'gallery-standard' },
+  { src: '/photos/attendees.jpg', alt: 'Three attendees at the first EITDA edition', className: 'gallery-wide' },
+  { src: '/photos/connections.jpg', alt: 'Two community members at the first EITDA edition', className: 'gallery-standard' },
 ];
 
 export default function Home() {
@@ -45,12 +46,12 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <img className="hero-image" src="/eitda-community.jpg" alt="Young people gathered at an Earning in the Digital Age event" />
+        <img className="hero-image" src="/eitda-community.jpg" alt="Young people gathered at the first Earning in the Digital Age edition in December 2025" />
         <div className="hero-shade" /><div className="hero-grid" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow"><span /> Earning in the Digital Age</p>
+          <p className="eyebrow"><span /> EITDA 2026 · Second Edition</p>
           <h1>Learn the skills.<br />Build your future.</h1>
-          <p className="hero-copy">A youth empowerment initiative by Eshiet Foundation, helping a new generation turn access, ideas, and digital skills into opportunity.</p>
+          <p className="hero-copy">Earning in the Digital Age returns for its second edition—an Eshiet Foundation youth empowerment experience helping a new generation turn digital skills into opportunity.</p>
           <div className="hero-event-facts" aria-label="Event details">
             <div className="event-fact fact-date">
               <span className="fact-icon"><CalendarDays size={18} aria-hidden="true" /></span>
@@ -83,7 +84,7 @@ export default function Home() {
 
       <section className="event-details" id="tickets">
         <div className="event-details-heading">
-          <p className="eyebrow dark"><span /> EITDA 2026</p>
+          <p className="eyebrow dark"><span /> The Second Edition · EITDA 2026</p>
           <h2>One day.<br />Real opportunity.</h2>
         </div>
         <div className="event-venue">
@@ -151,9 +152,9 @@ export default function Home() {
 
       <section className="experience" aria-labelledby="experience-title">
         <div className="experience-heading">
-          <p className="eyebrow"><span /> Seen at EITDA</p>
-          <h2 id="experience-title">Learning looks<br />better together.</h2>
-          <p>Real rooms. Real conversations. Real people moving from possibility to practice.</p>
+          <p className="eyebrow"><span /> First Edition · December 2025</p>
+          <h2 id="experience-title">Where the journey<br />began.</h2>
+          <p>These moments are from our first edition—real rooms, real conversations, and a community moving from possibility to practice.</p>
         </div>
         <div className="gallery-grid">
           {galleryPhotos.map((photo) => (
@@ -166,16 +167,16 @@ export default function Home() {
 
       <section className="community" id="impact">
         <div className="community-image-wrap">
-          <img src="/photos/team.jpg" alt="The EITDA organising team gathered together" loading="lazy" decoding="async" />
-          <div className="photo-label">Community in motion <span>↗</span></div>
+          <img src="/photos/team.jpg" alt="The EITDA organising team at the first edition in December 2025" loading="lazy" decoding="async" />
+          <div className="photo-label">First edition · Dec 2025 <span>↗</span></div>
         </div>
         <div className="community-copy">
-          <p className="eyebrow dark"><span /> Built around people</p>
+          <p className="eyebrow dark"><span /> From one edition to the next</p>
           <h2>Opportunity grows when knowledge is shared.</h2>
           <p>
-            Technology changes quickly. Community makes that change easier to
-            understand, navigate, and turn into progress. EITDA brings people
-            together to learn, ask better questions, and make the next move with confidence.
+            Our first edition in December 2025 showed what happens when access,
+            practical learning, and community meet. The second edition builds on
+            that momentum and opens the door to even more young people.
           </p>
           <div className="impact-principles">
             <span>Accessible learning</span><span>Practical guidance</span><span>Peer support</span>
@@ -213,7 +214,7 @@ export default function Home() {
           <h2>Ready to earn<br />in the digital age?</h2>
         </div>
         <div className="closing-note">
-          <p>Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi. General admission is free; VIP tickets are ₦15,000.</p>
+          <p>Join the second edition on Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi. General admission is free; VIP tickets are ₦15,000.</p>
           <a className="button button-yellow" href="#tickets">View ticket options <ArrowUpRight size={20} aria-hidden="true" /></a>
         </div>
       </section>
