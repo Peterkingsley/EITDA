@@ -13,22 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'EITDA — Earning in the Digital Age',
+  title: 'EITDA 2.0 | Turn Your Experience Into an Offer People Can Buy',
   description:
-    'The second edition of EITDA takes place 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom. General admission is free and VIP tickets are ₦15,000.',
+    'Join EITDA 2.0 in Ikot Abasi or online on 28 November 2026. Learn how to package your knowledge, skills, and experience into products, services, opportunities, and income.',
   icons: { icon: '/eshiet-foundation-logo.png' },
   openGraph: {
-    title: 'EITDA — Earning in the Digital Age',
+    title: 'Your Experience Has Value Beyond Your Job Title | EITDA 2.0',
     description:
-      'EITDA Second Edition · 28 November 2026 · Women War Memorial, Ikot Abasi · Free entry · VIP ₦15,000.',
+      'Discover how to turn what you already know into a clear offer, reach the right audience, price your value, and build something you own.',
     type: 'website',
     images: [{ url: '/eitda-community.jpg', width: 1920, height: 1280, alt: 'The EITDA community' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'EITDA — Earning in the Digital Age',
+    title: 'Your Experience Has Value Beyond Your Job Title | EITDA 2.0',
     description:
-      'EITDA Second Edition · 28 November 2026 · Women War Memorial, Ikot Abasi · Free entry · VIP ₦15,000.',
+      'Turn what you already know into a clear offer, reach the right audience, price your value, and build something you own.',
     images: ['/eitda-community.jpg'],
   },
 };
