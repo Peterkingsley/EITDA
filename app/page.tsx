@@ -17,7 +17,7 @@ const faqs = [
   ['Who is the programme for?', 'EITDA is for curious young people who want practical exposure to digital work, enterprise, and the skills shaping today’s economy.'],
   ['Do I need previous experience?', 'No. The learning journey is designed to be approachable for beginners while still giving participants practical ideas they can build on.'],
   ['When and where is EITDA 2026?', 'EITDA takes place on Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom.'],
-  ['How much are tickets?', 'General admission is free. A VIP ticket is available for ₦15,000. More registration and VIP access details will be announced on this website.'],
+  ['How much are tickets?', 'General admission is free. The ₦15,000 VIP Pass is limited to 50 people and includes reserved front-row seating, the full event recording, after-event speaker access, and more intimate networking and Q&A opportunities.'],
 ];
 
 const galleryPhotos = [
@@ -36,7 +36,7 @@ export default function Home() {
       <a className="event-bar" href="#tickets">
         <span>28 November 2026</span>
         <span>Women War Memorial · Ikot Abasi</span>
-        <strong>Free entry · VIP ₦15,000</strong>
+        <strong>Free entry · VIP ₦15,000 · 50 passes</strong>
       </a>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="EITDA home">
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="hero-event-facts" aria-label="Event details">
             <div><span>Date</span><strong>28 November 2026</strong></div>
             <div><span>Venue</span><strong>Women War Memorial, Ikot Abasi</strong></div>
-            <div><span>Entry</span><strong>Free · VIP ₦15,000</strong></div>
+            <div><span>Entry</span><strong>Free · VIP ₦15,000 · 50 passes</strong></div>
           </div>
           <div className="hero-actions">
             <a className="button button-yellow" href="#tickets">View ticket options <ArrowDownRight size={20} aria-hidden="true" /></a>
@@ -95,10 +95,16 @@ export default function Home() {
             <span className="ticket-status">Registration details coming soon</span>
           </article>
           <article className="ticket-card ticket-vip">
-            <div><span>VIP ticket</span><b>02</b></div>
+            <div><span>VIP Pass</span><b>Only 50</b></div>
             <strong><small>₦</small>15,000</strong>
-            <p>Choose the paid VIP ticket option for the upgraded event experience.</p>
-            <span className="ticket-status">VIP access details coming soon</span>
+            <p>A more personal EITDA experience with premium access throughout the event.</p>
+            <ul className="vip-benefits" aria-label="VIP Pass benefits">
+              <li>Reserved front-row seating</li>
+              <li>Full event recording</li>
+              <li>Special after-event access to participating speakers</li>
+              <li>More intimate networking and Q&amp;A opportunities</li>
+            </ul>
+            <span className="ticket-status">Limited to 50 people</span>
           </article>
         </div>
       </section>
