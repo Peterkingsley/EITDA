@@ -1,5 +1,7 @@
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 
+const SELAR_TICKET_URL = 'https://selar.com/817383or48';
+
 const tracks = [
   {
     number: '01',
@@ -127,8 +129,13 @@ export default function Home() {
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a className="nav-cta" href="#tickets">
-          Ticket options
+        <a
+          className="nav-cta"
+          href={SELAR_TICKET_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book tickets
           <ArrowUpRight size={17} aria-hidden="true" />
         </a>
       </header>
@@ -161,8 +168,13 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="button button-yellow" href="#tickets">
-              View ticket options
+            <a
+              className="button button-yellow"
+              href={SELAR_TICKET_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Book your ticket
               <ArrowDownRight size={20} aria-hidden="true" />
             </a>
 
@@ -243,9 +255,16 @@ export default function Home() {
               Join the EITDA 2026 learning experience at no ticket cost.
             </p>
 
-            <span className="ticket-status">
-              Registration details coming soon
-            </span>
+            <a
+              className="button button-yellow"
+              href={SELAR_TICKET_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginTop: 'auto', width: 'max-content' }}
+            >
+              Register free
+              <ArrowUpRight size={18} aria-hidden="true" />
+            </a>
           </article>
 
           <article className="ticket-card ticket-vip" data-number="02">
@@ -270,7 +289,16 @@ export default function Home() {
               <li>More intimate networking and Q&amp;A opportunities</li>
             </ul>
 
-            <span className="ticket-status">Limited to 50 people</span>
+            <a
+              className="button button-yellow"
+              href={SELAR_TICKET_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginTop: 'auto', width: 'max-content' }}
+            >
+              Get VIP ticket
+              <ArrowUpRight size={18} aria-hidden="true" />
+            </a>
           </article>
         </div>
       </section>
@@ -489,8 +517,13 @@ export default function Home() {
             ₦15,000.
           </p>
 
-          <a className="button button-yellow" href="#tickets">
-            View ticket options
+          <a
+            className="button button-yellow"
+            href={SELAR_TICKET_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book your ticket
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
         </div>
