@@ -1,9 +1,9 @@
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 
 const tracks = [
-  { number: '01', title: 'Digital Skills', copy: 'Build the practical confidence to use today’s digital tools for work, learning, and growth.' },
-  { number: '02', title: 'Work & Freelancing', copy: 'Learn how to position your skills, find opportunities, and deliver value in a borderless economy.' },
-  { number: '03', title: 'Digital Enterprise', copy: 'Turn useful ideas into resilient, technology-enabled ventures that serve real communities.' },
+  { number: '01', title: 'Digital Skills', copy: 'Build the practical confidence to use today’s digital tools for work, learning, and growth.', image: '/photos/speaker.jpg', alt: 'An EITDA participant sharing a practical demonstration' },
+  { number: '02', title: 'Work & Freelancing', copy: 'Learn how to position your skills, find opportunities, and deliver value in a borderless economy.', image: '/photos/conversation.jpg', alt: 'EITDA participants connecting after a session' },
+  { number: '03', title: 'Digital Enterprise', copy: 'Turn useful ideas into resilient, technology-enabled ventures that serve real communities.', image: '/photos/collaboration.jpg', alt: 'Participants collaborating during the EITDA event' },
 ];
 
 const pathway = [
@@ -17,6 +17,16 @@ const faqs = [
   ['Who is the programme for?', 'EITDA is for curious young people who want practical exposure to digital work, enterprise, and the skills shaping today’s economy.'],
   ['Do I need previous experience?', 'No. The learning journey is designed to be approachable for beginners while still giving participants practical ideas they can build on.'],
   ['When will the next programme hold?', 'The next programme details, including dates, location, and registration information, will be announced on this website.'],
+];
+
+const galleryPhotos = [
+  { src: '/photos/session.jpg', alt: 'An EITDA learning session in progress', className: 'gallery-wide' },
+  { src: '/photos/community-four.jpg', alt: 'Members of the EITDA community together', className: 'gallery-standard' },
+  { src: '/photos/learning.jpg', alt: 'A participant focused during an EITDA session', className: 'gallery-tall' },
+  { src: '/photos/host.jpg', alt: 'An EITDA host smiling at the event', className: 'gallery-standard' },
+  { src: '/photos/stage-moment.jpg', alt: 'A stage moment shared by EITDA participants', className: 'gallery-standard' },
+  { src: '/photos/attendees.jpg', alt: 'Three EITDA attendees at the event', className: 'gallery-wide' },
+  { src: '/photos/connections.jpg', alt: 'Two members of the EITDA community', className: 'gallery-standard' },
 ];
 
 export default function Home() {
@@ -64,7 +74,10 @@ export default function Home() {
         <div className="track-list">
           {tracks.map((track) => (
             <article className="track-card" key={track.number}>
-              <span>{track.number}</span><h3>{track.title}</h3><p>{track.copy}</p><ArrowUpRight aria-hidden="true" />
+              <img src={track.image} alt={track.alt} loading="lazy" decoding="async" />
+              <div className="track-card-copy">
+                <span>{track.number}</span><h3>{track.title}</h3><p>{track.copy}</p><ArrowUpRight aria-hidden="true" />
+              </div>
             </article>
           ))}
         </div>
@@ -89,9 +102,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="experience" aria-labelledby="experience-title">
+        <div className="experience-heading">
+          <p className="eyebrow"><span /> Seen at EITDA</p>
+          <h2 id="experience-title">Learning looks<br />better together.</h2>
+          <p>Real rooms. Real conversations. Real people moving from possibility to practice.</p>
+        </div>
+        <div className="gallery-grid">
+          {galleryPhotos.map((photo) => (
+            <figure className={photo.className} key={photo.src}>
+              <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" />
+            </figure>
+          ))}
+        </div>
+      </section>
+
       <section className="community" id="impact">
         <div className="community-image-wrap">
-          <img src="/eitda-community.jpg" alt="The EITDA community gathered together" />
+          <img src="/photos/team.jpg" alt="The EITDA organising team gathered together" loading="lazy" decoding="async" />
           <div className="photo-label">Community in motion <span>↗</span></div>
         </div>
         <div className="community-copy">
@@ -131,6 +159,8 @@ export default function Home() {
       </section>
 
       <section className="closing">
+        <img className="closing-image" src="/photos/session.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+        <div className="closing-overlay" aria-hidden="true" />
         <div>
           <p className="eyebrow"><span /> The next chapter</p>
           <h2>Ready to earn<br />in the digital age?</h2>
