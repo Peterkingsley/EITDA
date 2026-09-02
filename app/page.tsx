@@ -1,0 +1,158 @@
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+
+const tracks = [
+  { number: '01', title: 'Digital Skills', copy: 'Build the practical confidence to use today’s digital tools for work, learning, and growth.' },
+  { number: '02', title: 'Work & Freelancing', copy: 'Learn how to position your skills, find opportunities, and deliver value in a borderless economy.' },
+  { number: '03', title: 'Digital Enterprise', copy: 'Turn useful ideas into resilient, technology-enabled ventures that serve real communities.' },
+];
+
+const pathway = [
+  { step: 'Discover', copy: 'Understand the digital economy and identify where your strengths can create value.' },
+  { step: 'Develop', copy: 'Build useful skills through practical, guided learning and hands-on exercises.' },
+  { step: 'Deploy', copy: 'Turn learning into a portfolio, service, product, or next step you can act on.' },
+];
+
+const faqs = [
+  ['What is EITDA?', 'Earning in the Digital Age is an Eshiet Foundation initiative designed to help young people understand, navigate, and benefit from the opportunities created by the digital economy.'],
+  ['Who is the programme for?', 'EITDA is for curious young people who want practical exposure to digital work, enterprise, and the skills shaping today’s economy.'],
+  ['Do I need previous experience?', 'No. The learning journey is designed to be approachable for beginners while still giving participants practical ideas they can build on.'],
+  ['When will the next programme hold?', 'The next programme details, including dates, location, and registration information, will be announced on this website.'],
+];
+
+export default function Home() {
+  return (
+    <main>
+      <header className="site-header">
+        <a className="brand" href="#top" aria-label="EITDA home">
+          <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
+          <span><strong>EITDA</strong><small>by Eshiet Foundation</small></span>
+        </a>
+        <nav className="desktop-nav" aria-label="Primary navigation">
+          <a href="#about">About</a><a href="#programme">Programme</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
+        </nav>
+        <a className="nav-cta" href="#programme">Explore EITDA <ArrowUpRight size={17} aria-hidden="true" /></a>
+      </header>
+
+      <section className="hero" id="top">
+        <img className="hero-image" src="/eitda-community.jpg" alt="Young people gathered at an Earning in the Digital Age event" />
+        <div className="hero-shade" /><div className="hero-grid" aria-hidden="true" />
+        <div className="hero-content">
+          <p className="eyebrow"><span /> Earning in the Digital Age</p>
+          <h1>Learn the skills.<br />Build your future.</h1>
+          <p className="hero-copy">A youth empowerment initiative by Eshiet Foundation, helping a new generation turn access, ideas, and digital skills into opportunity.</p>
+          <div className="hero-actions">
+            <a className="button button-yellow" href="#programme">Explore the programme <ArrowDownRight size={20} aria-hidden="true" /></a>
+            <a className="text-link" href="#about">Discover our mission <ArrowUpRight size={17} aria-hidden="true" /></a>
+          </div>
+        </div>
+        <div className="hero-side-note"><span>Skills</span><span>Opportunity</span><span>Community</span></div>
+      </section>
+
+      <section className="intro" id="about">
+        <div className="section-kicker">Why EITDA <span>01</span></div>
+        <div className="intro-copy">
+          <h2>The digital economy should work for everyone.</h2>
+          <p>EITDA creates a practical bridge between ambition and access. We bring learning, real-world guidance, and community into one place so young people can move from consuming technology to creating value with it.</p>
+        </div>
+      </section>
+
+      <section className="track-preview" id="programme">
+        <div className="track-heading">
+          <p className="eyebrow dark"><span /> The learning journey</p>
+          <h2>Skills for the way<br />the world works now.</h2>
+        </div>
+        <div className="track-list">
+          {tracks.map((track) => (
+            <article className="track-card" key={track.number}>
+              <span>{track.number}</span><h3>{track.title}</h3><p>{track.copy}</p><ArrowUpRight aria-hidden="true" />
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="pathway">
+        <div className="pathway-copy">
+          <div className="section-kicker light">How it works <span>02</span></div>
+          <h2>From curiosity<br />to capability.</h2>
+          <p>
+            EITDA is built around action. Each stage moves participants closer
+            to seeing themselves as confident contributors to the digital economy.
+          </p>
+        </div>
+        <div className="pathway-steps">
+          {pathway.map((item, index) => (
+            <article key={item.step}>
+              <span>0{index + 1}</span>
+              <div><h3>{item.step}</h3><p>{item.copy}</p></div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="community" id="impact">
+        <div className="community-image-wrap">
+          <img src="/eitda-community.jpg" alt="The EITDA community gathered together" />
+          <div className="photo-label">Community in motion <span>↗</span></div>
+        </div>
+        <div className="community-copy">
+          <p className="eyebrow dark"><span /> Built around people</p>
+          <h2>Opportunity grows when knowledge is shared.</h2>
+          <p>
+            Technology changes quickly. Community makes that change easier to
+            understand, navigate, and turn into progress. EITDA brings people
+            together to learn, ask better questions, and make the next move with confidence.
+          </p>
+          <div className="impact-principles">
+            <span>Accessible learning</span><span>Practical guidance</span><span>Peer support</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="manifesto">
+        <p>Our belief</p>
+        <h2>Talent is everywhere.<br /><em>Access should be too.</em></h2>
+        <div className="manifesto-mark" aria-hidden="true"><i /><i /><i /></div>
+      </section>
+
+      <section className="faq" id="faq">
+        <div className="faq-heading">
+          <div className="section-kicker">Good to know <span>03</span></div>
+          <h2>Questions,<br />answered.</h2>
+          <p>Everything you need to know before the next EITDA programme announcement.</p>
+        </div>
+        <div className="faq-list">
+          {faqs.map(([question, answer], index) => (
+            <details key={question} open={index === 0}>
+              <summary><span>0{index + 1}</span>{question}<b aria-hidden="true">+</b></summary>
+              <p>{answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="closing">
+        <div>
+          <p className="eyebrow"><span /> The next chapter</p>
+          <h2>Ready to earn<br />in the digital age?</h2>
+        </div>
+        <div className="closing-note">
+          <p>Programme dates, location, and registration details will be announced here.</p>
+          <a className="button button-yellow" href="#top">Return to the top <ArrowUpRight size={20} aria-hidden="true" /></a>
+        </div>
+      </section>
+
+      <footer>
+        <div className="footer-brand">
+          <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
+          <div><strong>EITDA</strong><span>Earning in the Digital Age</span></div>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="#about">About</a><a href="#programme">Programme</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
+        </nav>
+        <div className="footer-bottom">
+          <span>An initiative of Eshiet Foundation</span><span>© {new Date().getFullYear()} Eshiet Foundation</span>
+        </div>
+      </footer>
+    </main>
+  );
+}
