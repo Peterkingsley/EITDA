@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
+import { ArrowDownRight, ArrowUpRight, CalendarDays, MapPin, Ticket } from 'lucide-react';
 
 const tracks = [
   { number: '01', title: 'Digital Skills', copy: 'Build the practical confidence to use today’s digital tools for work, learning, and growth.', image: '/photos/speaker.jpg', alt: 'An EITDA participant sharing a practical demonstration' },
@@ -33,11 +33,6 @@ const galleryPhotos = [
 export default function Home() {
   return (
     <main>
-      <a className="event-bar" href="#tickets">
-        <span>28 November 2026</span>
-        <span>Women War Memorial · Ikot Abasi</span>
-        <strong>Free entry · VIP ₦15,000 · 50 passes</strong>
-      </a>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="EITDA home">
           <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
@@ -57,9 +52,18 @@ export default function Home() {
           <h1>Learn the skills.<br />Build your future.</h1>
           <p className="hero-copy">A youth empowerment initiative by Eshiet Foundation, helping a new generation turn access, ideas, and digital skills into opportunity.</p>
           <div className="hero-event-facts" aria-label="Event details">
-            <div><span>Date</span><strong>28 November 2026</strong></div>
-            <div><span>Venue</span><strong>Women War Memorial, Ikot Abasi</strong></div>
-            <div><span>Entry</span><strong>Free · VIP ₦15,000 · 50 passes</strong></div>
+            <div className="event-fact fact-date">
+              <span className="fact-icon"><CalendarDays size={18} aria-hidden="true" /></span>
+              <span className="fact-copy"><small>Date</small><strong>28 November 2026</strong><em>Saturday</em></span>
+            </div>
+            <div className="event-fact fact-venue">
+              <span className="fact-icon"><MapPin size={18} aria-hidden="true" /></span>
+              <span className="fact-copy"><small>Venue</small><strong>Women War Memorial</strong><em>Ikot Abasi, Akwa Ibom</em></span>
+            </div>
+            <div className="event-fact fact-entry">
+              <span className="fact-icon"><Ticket size={18} aria-hidden="true" /></span>
+              <span className="fact-copy"><small>Entry</small><strong>Free / VIP ₦15,000</strong><em>Only 50 VIP passes</em></span>
+            </div>
           </div>
           <div className="hero-actions">
             <a className="button button-yellow" href="#tickets">View ticket options <ArrowDownRight size={20} aria-hidden="true" /></a>
