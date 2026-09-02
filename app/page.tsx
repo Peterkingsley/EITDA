@@ -83,23 +83,32 @@ export default function Home() {
       </section>
 
       <section className="event-details" id="tickets">
-        <div className="event-details-heading">
-          <p className="eyebrow dark"><span /> The Second Edition · EITDA 2026</p>
-          <h2>One day.<br />Real opportunity.</h2>
-        </div>
-        <div className="event-venue">
-          <span>Saturday</span>
-          <strong>28 November<br />2026</strong>
-          <p>Women War Memorial<br />Ikot Abasi, Akwa Ibom</p>
+        <div className="event-details-top">
+          <div className="event-details-heading">
+            <p className="eyebrow dark"><span /> The Second Edition · EITDA 2026</p>
+            <h2>One day.<br />Real opportunity.</h2>
+          </div>
+          <div className="event-venue">
+            <div className="event-date-block">
+              <span>Saturday</span>
+              <strong>28</strong>
+              <small>November 2026</small>
+            </div>
+            <div className="event-place-block">
+              <span>Venue</span>
+              <strong>Women War<br />Memorial</strong>
+              <p>Ikot Abasi, Akwa Ibom</p>
+            </div>
+          </div>
         </div>
         <div className="ticket-options">
-          <article className="ticket-card ticket-free">
+          <article className="ticket-card ticket-free" data-number="01">
             <div><span>General admission</span><b>01</b></div>
             <strong>Free</strong>
             <p>Join the EITDA 2026 learning experience at no ticket cost.</p>
             <span className="ticket-status">Registration details coming soon</span>
           </article>
-          <article className="ticket-card ticket-vip">
+          <article className="ticket-card ticket-vip" data-number="02">
             <div><span>VIP Pass</span><b>Only 50</b></div>
             <strong><small>₦</small>15,000</strong>
             <p>A more personal EITDA experience with premium access throughout the event.</p>
