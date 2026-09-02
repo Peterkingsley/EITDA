@@ -15,12 +15,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'EITDA — Earning in the Digital Age',
   description:
-    'An Eshiet Foundation youth empowerment initiative connecting digital skills, opportunity, and community.',
+    'EITDA 2026 takes place 28 November at Women War Memorial, Ikot Abasi, Akwa Ibom. General admission is free and VIP tickets are ₦15,000.',
   icons: { icon: '/eshiet-foundation-logo.png' },
   openGraph: {
     title: 'EITDA — Earning in the Digital Age',
     description:
-      'Learn the skills. Build your future. An Eshiet Foundation youth empowerment initiative.',
+      '28 November 2026 · Women War Memorial, Ikot Abasi · Free entry · VIP ₦15,000.',
     type: 'website',
     images: [{ url: '/eitda-community.jpg', width: 1920, height: 1280, alt: 'The EITDA community' }],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'EITDA — Earning in the Digital Age',
     description:
-      'Learn the skills. Build your future. An Eshiet Foundation youth empowerment initiative.',
+      '28 November 2026 · Women War Memorial, Ikot Abasi · Free entry · VIP ₦15,000.',
     images: ['/eitda-community.jpg'],
   },
 };

@@ -16,7 +16,8 @@ const faqs = [
   ['What is EITDA?', 'Earning in the Digital Age is an Eshiet Foundation initiative designed to help young people understand, navigate, and benefit from the opportunities created by the digital economy.'],
   ['Who is the programme for?', 'EITDA is for curious young people who want practical exposure to digital work, enterprise, and the skills shaping today’s economy.'],
   ['Do I need previous experience?', 'No. The learning journey is designed to be approachable for beginners while still giving participants practical ideas they can build on.'],
-  ['When will the next programme hold?', 'The next programme details, including dates, location, and registration information, will be announced on this website.'],
+  ['When and where is EITDA 2026?', 'EITDA takes place on Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom.'],
+  ['How much are tickets?', 'General admission is free. A VIP ticket is available for ₦15,000. More registration and VIP access details will be announced on this website.'],
 ];
 
 const galleryPhotos = [
@@ -32,15 +33,20 @@ const galleryPhotos = [
 export default function Home() {
   return (
     <main>
+      <a className="event-bar" href="#tickets">
+        <span>28 November 2026</span>
+        <span>Women War Memorial · Ikot Abasi</span>
+        <strong>Free entry · VIP ₦15,000</strong>
+      </a>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="EITDA home">
           <img src="/eshiet-foundation-logo.png" alt="Eshiet Foundation" />
           <span><strong>EITDA</strong><small>by Eshiet Foundation</small></span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#about">About</a><a href="#programme">Programme</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
+          <a href="#about">About</a><a href="#programme">Programme</a><a href="#tickets">Tickets</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
         </nav>
-        <a className="nav-cta" href="#programme">Explore EITDA <ArrowUpRight size={17} aria-hidden="true" /></a>
+        <a className="nav-cta" href="#tickets">Ticket options <ArrowUpRight size={17} aria-hidden="true" /></a>
       </header>
 
       <section className="hero" id="top">
@@ -50,8 +56,13 @@ export default function Home() {
           <p className="eyebrow"><span /> Earning in the Digital Age</p>
           <h1>Learn the skills.<br />Build your future.</h1>
           <p className="hero-copy">A youth empowerment initiative by Eshiet Foundation, helping a new generation turn access, ideas, and digital skills into opportunity.</p>
+          <div className="hero-event-facts" aria-label="Event details">
+            <div><span>Date</span><strong>28 November 2026</strong></div>
+            <div><span>Venue</span><strong>Women War Memorial, Ikot Abasi</strong></div>
+            <div><span>Entry</span><strong>Free · VIP ₦15,000</strong></div>
+          </div>
           <div className="hero-actions">
-            <a className="button button-yellow" href="#programme">Explore the programme <ArrowDownRight size={20} aria-hidden="true" /></a>
+            <a className="button button-yellow" href="#tickets">View ticket options <ArrowDownRight size={20} aria-hidden="true" /></a>
             <a className="text-link" href="#about">Discover our mission <ArrowUpRight size={17} aria-hidden="true" /></a>
           </div>
         </div>
@@ -63,6 +74,32 @@ export default function Home() {
         <div className="intro-copy">
           <h2>The digital economy should work for everyone.</h2>
           <p>EITDA creates a practical bridge between ambition and access. We bring learning, real-world guidance, and community into one place so young people can move from consuming technology to creating value with it.</p>
+        </div>
+      </section>
+
+      <section className="event-details" id="tickets">
+        <div className="event-details-heading">
+          <p className="eyebrow dark"><span /> EITDA 2026</p>
+          <h2>One day.<br />Real opportunity.</h2>
+        </div>
+        <div className="event-venue">
+          <span>Saturday</span>
+          <strong>28 November<br />2026</strong>
+          <p>Women War Memorial<br />Ikot Abasi, Akwa Ibom</p>
+        </div>
+        <div className="ticket-options">
+          <article className="ticket-card ticket-free">
+            <div><span>General admission</span><b>01</b></div>
+            <strong>Free</strong>
+            <p>Join the EITDA 2026 learning experience at no ticket cost.</p>
+            <span className="ticket-status">Registration details coming soon</span>
+          </article>
+          <article className="ticket-card ticket-vip">
+            <div><span>VIP ticket</span><b>02</b></div>
+            <strong><small>₦</small>15,000</strong>
+            <p>Choose the paid VIP ticket option for the upgraded event experience.</p>
+            <span className="ticket-status">VIP access details coming soon</span>
+          </article>
         </div>
       </section>
 
@@ -146,7 +183,7 @@ export default function Home() {
         <div className="faq-heading">
           <div className="section-kicker">Good to know <span>03</span></div>
           <h2>Questions,<br />answered.</h2>
-          <p>Everything you need to know before the next EITDA programme announcement.</p>
+          <p>Everything you need to know about attending EITDA 2026 in Ikot Abasi.</p>
         </div>
         <div className="faq-list">
           {faqs.map(([question, answer], index) => (
@@ -166,8 +203,8 @@ export default function Home() {
           <h2>Ready to earn<br />in the digital age?</h2>
         </div>
         <div className="closing-note">
-          <p>Programme dates, location, and registration details will be announced here.</p>
-          <a className="button button-yellow" href="#top">Return to the top <ArrowUpRight size={20} aria-hidden="true" /></a>
+          <p>Saturday, 28 November 2026 at Women War Memorial, Ikot Abasi. General admission is free; VIP tickets are ₦15,000.</p>
+          <a className="button button-yellow" href="#tickets">View ticket options <ArrowUpRight size={20} aria-hidden="true" /></a>
         </div>
       </section>
 
@@ -177,7 +214,7 @@ export default function Home() {
           <div><strong>EITDA</strong><span>Earning in the Digital Age</span></div>
         </div>
         <nav aria-label="Footer navigation">
-          <a href="#about">About</a><a href="#programme">Programme</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
+          <a href="#about">About</a><a href="#programme">Programme</a><a href="#tickets">Tickets</a><a href="#impact">Impact</a><a href="#faq">FAQ</a>
         </nav>
         <div className="footer-bottom">
           <span>An initiative of Eshiet Foundation</span><span>© {new Date().getFullYear()} Eshiet Foundation</span>
