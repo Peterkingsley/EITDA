@@ -6,22 +6,22 @@ const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
 const tracks = [
   {
     number: '01',
-    title: 'Digital Skills',
-    copy: 'Build the practical confidence to use today’s digital tools for work, learning, and growth.',
+    title: 'Find Your Value',
+    copy: 'Break down your experience, skills and knowledge to discover the problems you are already equipped to solve.',
     image: '/photos/speaker.jpg',
     alt: 'An EITDA participant sharing a practical demonstration',
   },
   {
     number: '02',
-    title: 'Work & Freelancing',
-    copy: 'Learn how to position your skills, find opportunities, and deliver value in a borderless economy.',
+    title: 'Package What You Know',
+    copy: 'Turn your experience into a clear service, role, solution or contribution that a company, founder or organisation can understand and use.',
     image: '/photos/conversation.jpg',
     alt: 'EITDA participants connecting after a session',
   },
   {
     number: '03',
-    title: 'Digital Enterprise',
-    copy: 'Turn useful ideas into resilient, technology-enabled ventures that serve real communities.',
+    title: 'Take It To Market',
+    copy: 'Learn how to position yourself, find the people who need your expertise, communicate your value and turn opportunities into income.',
     image: '/photos/collaboration.jpg',
     alt: 'Participants collaborating during the EITDA event',
   },
@@ -65,7 +65,7 @@ const faqs = [
   ],
   [
     'How much are tickets?',
-    'General admission is free. The ₦15,000 VIP Pass is limited to 50 people and includes reserved front-row seating, the full event recording, after-event speaker access, and more intimate networking and Q&A opportunities.',
+    'General Access is free and available for both physical and virtual attendees. The ₦15,000 VIP Experience is also available physically or virtually. Physical VIP includes reserved front-row seating, while all VIP attendees receive premium access, the full event recording, private VIP community access, speaker access, and more intimate networking and Q&A opportunities.',
   ],
 ];
 
@@ -207,17 +207,52 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="track-preview" id="programme">
+        <div className="track-heading">
+          <p className="eyebrow dark">
+            <span /> The EITDA journey
+          </p>
+
+          <h2>
+            From experience
+            <br />
+            to market value.
+          </h2>
+        </div>
+
+        <div className="track-list">
+          {tracks.map((track) => (
+            <article className="track-card" key={track.number}>
+              <img
+                src={track.image}
+                alt={track.alt}
+                loading="lazy"
+                decoding="async"
+              />
+
+              <div className="track-card-copy">
+                <span>{track.number}</span>
+                <h3>{track.title}</h3>
+                <p>{track.copy}</p>
+                <ArrowUpRight aria-hidden="true" />
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+
       <section className="event-details" id="tickets">
         <div className="event-details-top">
           <div className="event-details-heading">
             <p className="eyebrow dark">
-              <span /> The Second Edition · EITDA 2026
+              <span /> Physical or Virtual · EITDA 2026
             </p>
 
             <h2>
-              One day.
+              Choose how you
               <br />
-              Real opportunity.
+              experience EITDA.
             </h2>
           </div>
 
@@ -243,7 +278,7 @@ export default function Home() {
         <div className="ticket-options">
           <article className="ticket-card ticket-free" data-number="01">
             <div>
-              <span>General admission</span>
+              <span>General access</span>
               <b>01</b>
             </div>
 
@@ -264,18 +299,18 @@ export default function Home() {
             </strong>
 
             <p>
-              Join the EITDA 2026 learning experience at no ticket cost.
+              Attend physically or join virtually at no ticket cost.
             </p>
 
             <ul
               className="ticket-benefits general-benefits"
-              aria-label="General admission benefits"
+              aria-label="General access benefits"
             >
-              <li>Full access to the main EITDA 2.0 event</li>
-              <li>Access to speaker sessions and presentations</li>
-              <li>Practical digital economy conversations and demonstrations</li>
-              <li>General networking opportunities</li>
-              <li>Access to participating brands and event experiences</li>
+              <li>Full access to the main EITDA 2.0 experience</li>
+              <li>Access to all main speaker sessions</li>
+              <li>Practical sessions and demonstrations</li>
+              <li>General networking and community access</li>
+              <li>Choose Physical or Virtual when registering</li>
             </ul>
 
             <a
@@ -285,15 +320,15 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Register free
+              Get general access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
 
           <article className="ticket-card ticket-vip" data-number="02">
             <div>
-              <span>VIP Pass</span>
-              <b>Only 50</b>
+              <span>VIP Experience</span>
+              <b>50 Physical VIP Seats</b>
             </div>
 
             <strong>
@@ -313,15 +348,17 @@ export default function Home() {
             </strong>
 
             <p>
-              A more personal EITDA experience with premium access throughout
-              the event.
+              Available for both physical and virtual attendees with premium
+              access beyond the main event.
             </p>
 
-            <ul className="ticket-benefits vip-benefits" aria-label="VIP Pass benefits">
-              <li>Reserved front-row seating</li>
+            <ul className="ticket-benefits vip-benefits" aria-label="VIP Experience benefits">
+              <li>Full EITDA 2.0 premium experience</li>
               <li>Full event recording</li>
-              <li>Special after-event access to participating speakers</li>
-              <li>More intimate networking and Q&amp;A opportunities</li>
+              <li>Private VIP WhatsApp community</li>
+              <li>Special access to participating speakers</li>
+              <li>More intimate Q&amp;A and networking opportunities</li>
+              <li>Physical VIP includes reserved front-row seating</li>
             </ul>
 
             <a
@@ -331,44 +368,10 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Get VIP ticket
+              Get VIP access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
-        </div>
-      </section>
-
-      <section className="track-preview" id="programme">
-        <div className="track-heading">
-          <p className="eyebrow dark">
-            <span /> The learning journey
-          </p>
-
-          <h2>
-            Skills for the way
-            <br />
-            the world works now.
-          </h2>
-        </div>
-
-        <div className="track-list">
-          {tracks.map((track) => (
-            <article className="track-card" key={track.number}>
-              <img
-                src={track.image}
-                alt={track.alt}
-                loading="lazy"
-                decoding="async"
-              />
-
-              <div className="track-card-copy">
-                <span>{track.number}</span>
-                <h3>{track.title}</h3>
-                <p>{track.copy}</p>
-                <ArrowUpRight aria-hidden="true" />
-              </div>
-            </article>
-          ))}
         </div>
       </section>
 
@@ -547,9 +550,8 @@ export default function Home() {
 
         <div className="closing-note">
           <p>
-            Join the second edition on Saturday, 28 November 2026 at Women War
-            Memorial, Ikot Abasi. General admission is free; VIP tickets are
-            ₦15,000.
+            Join EITDA 2026 physically in Ikot Abasi or virtually from anywhere.
+            General Access is free; the VIP Experience is ₦15,000.
           </p>
 
           <a className="button button-yellow" href="#tickets">
