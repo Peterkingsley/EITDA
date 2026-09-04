@@ -162,9 +162,9 @@ export default function Home() {
           </p>
 
           <h1>
-            Your experience.
+            Your experience
             <br />
-            Can earn more.
+            Can earn more
           </h1>
 
           <p className="hero-copy">
