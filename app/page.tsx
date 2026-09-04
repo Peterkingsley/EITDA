@@ -7,21 +7,21 @@ const tracks = [
   {
     number: '01',
     title: 'Find Your Value',
-    copy: 'Break down your experience, skills and knowledge to discover the problems you are already equipped to solve.',
+    copy: 'We break down your experience, skills and knowledge to discover the problems you are already equipped to solve.',
     image: '/photos/speaker.jpg',
     alt: 'An EITDA participant sharing a practical demonstration',
   },
   {
     number: '02',
     title: 'Package What You Know',
-    copy: 'Turn your experience into a clear service, role, solution or contribution that a company, founder or organisation can understand and use.',
+    copy: 'We turn your experience into a clear service, role, solution or contribution that a company, founder or organisation can understand and use.',
     image: '/photos/conversation.jpg',
     alt: 'EITDA participants connecting after a session',
   },
   {
     number: '03',
     title: 'Take It To Market',
-    copy: 'Learn how to position yourself, find the people who need your expertise, communicate your value and turn opportunities into income.',
+    copy: 'We teach you how to position yourself, find the people who need your expertise, communicate your value and turn opportunities into income.',
     image: '/photos/collaboration.jpg',
     alt: 'Participants collaborating during the EITDA event',
   },
@@ -29,17 +29,26 @@ const tracks = [
 
 const pathway = [
   {
-    step: 'Discover',
-    copy: 'Understand the digital economy and identify where your strengths can create value.',
+    step: 'A Clearer Positioning',
+    copy: 'We help you understand what part of your experience is valuable and how to describe it in a way companies, founders and organisations understand.',
   },
   {
-    step: 'Develop',
-    copy: 'Build useful skills through practical, guided learning and hands-on exercises.',
+    step: 'A Market To Target',
+    copy: 'Know the types of startups, businesses, teams and opportunities that are most likely to need what you already know.',
   },
   {
-    step: 'Deploy',
-    copy: 'Turn learning into a portfolio, service, product, or next step you can act on.',
+    step: 'A Practical Next Move',
+    copy: 'Leave with a clearer offer, positioning, outreach direction or career path you can start acting on immediately.',
   },
+];
+
+const speakerTeasers = [
+  { number: '01', note: 'Founder / Operator', prompt: 'Who do you think this is?' },
+  { number: '02', note: 'Industry Professional', prompt: 'Revealing soon' },
+  { number: '03', note: 'Builder / Advisor', prompt: 'Speaker reveal coming soon' },
+  { number: '04', note: 'Market Expert', prompt: 'Who is joining the room?' },
+  { number: '05', note: 'Founder / Operator', prompt: 'Revealing soon' },
+  { number: '06', note: 'Industry Professional', prompt: 'Speaker reveal coming soon' },
 ];
 
 const faqs = [
@@ -125,6 +134,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#programme">Programme</a>
+          <a href="#speakers">Speakers</a>
           <a href="#tickets">Tickets</a>
           <a href="#impact">Impact</a>
           <a href="#faq">FAQ</a>
@@ -375,22 +385,72 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pathway">
-        <div className="pathway-copy">
-          <div className="section-kicker light">
-            How it works <span>02</span>
-          </div>
+      <section className="speaker-reveal" id="speakers" aria-labelledby="speaker-reveal-title">
+        <div className="speaker-reveal-heading">
+          <p className="eyebrow">
+            <span /> Speaker reveals · Coming soon
+          </p>
 
-          <h2>
-            From curiosity
+          <h2 id="speaker-reveal-title">
+            The people
             <br />
-            to capability.
+            behind the room.
           </h2>
 
           <p>
-            EITDA is built around action. Each stage moves participants closer
-            to seeing themselves as confident contributors to the digital
-            economy.
+            Founders, operators and professionals with real experience turning
+            knowledge into market value will be joining EITDA 2026. Speaker
+            announcements begin soon.
+          </p>
+        </div>
+
+        <div className="speaker-marquee" aria-label="EITDA 2026 speaker announcements coming soon">
+          <div className="speaker-marquee-track">
+            {[...speakerTeasers, ...speakerTeasers].map((speaker, index) => (
+              <article
+                className="speaker-teaser-card"
+                key={`${speaker.number}-${index}`}
+                aria-hidden={index >= speakerTeasers.length}
+              >
+                <div className="speaker-silhouette" aria-hidden="true">
+                  <span className="speaker-head" />
+                  <span className="speaker-body" />
+                </div>
+
+                <div className="speaker-card-overlay" aria-hidden="true" />
+
+                <div className="speaker-card-top">
+                  <span>Speaker {speaker.number}</span>
+                  <b>?</b>
+                </div>
+
+                <div className="speaker-card-copy">
+                  <small>{speaker.note}</small>
+                  <h3>{speaker.prompt}</h3>
+                  <span>Announcement coming soon</span>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="pathway">
+        <div className="pathway-copy">
+          <div className="section-kicker light">
+            What you leave with <span>03</span>
+          </div>
+
+          <h2>
+            Leave with direction,
+            <br />
+            not just inspiration.
+          </h2>
+
+          <p>
+            EITDA is designed to move you from a good idea about your experience
+            to a clearer understanding of where it fits, who needs it and what
+            you can do next.
           </p>
         </div>
 
@@ -577,6 +637,7 @@ export default function Home() {
         <nav aria-label="Footer navigation">
           <a href="#about">About</a>
           <a href="#programme">Programme</a>
+          <a href="#speakers">Speakers</a>
           <a href="#tickets">Tickets</a>
           <a href="#impact">Impact</a>
           <a href="#faq">FAQ</a>
