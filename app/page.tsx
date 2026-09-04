@@ -30,15 +30,15 @@ const tracks = [
 const pathway = [
   {
     step: 'A Clearer Positioning',
-    copy: 'Know what part of your experience is valuable and how to describe it in a way companies, founders and organisations understand.',
+    copy: 'You will know what part of your experience is valuable and how to describe it in a way companies, founders and organisations understand.',
   },
   {
     step: 'A Market To Target',
-    copy: 'Know the types of startups, businesses, teams and opportunities that are most likely to need what you already know.',
+    copy: 'You will know the types of startups, businesses, teams and opportunities that are most likely to need what you already know.',
   },
   {
     step: 'A Practical Next Move',
-    copy: 'Leave with a clearer offer, positioning, outreach direction or career path you can start acting on immediately.',
+    copy: 'You will leave with a clearer offer, positioning, outreach direction or career path you can start acting on immediately.',
   },
 ];
 
