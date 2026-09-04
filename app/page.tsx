@@ -141,7 +141,7 @@ export default function Home() {
         </nav>
 
         <a className="nav-cta" href="#tickets">
-          Book tickets
+          SEE TICKET OPTIONS
           <ArrowUpRight size={17} aria-hidden="true" />
         </a>
       </header>
@@ -330,7 +330,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Get general access
+              RESERVE MY FREE ACCESS
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -378,7 +378,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Get VIP access
+              RESERVE MY VIP EXPERIENCE
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -624,7 +624,7 @@ export default function Home() {
           </p>
 
           <a className="button button-yellow" href="#tickets">
-            Choose your ticket
+            I’M READY — SHOW MY OPTIONS →
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
         </div>
