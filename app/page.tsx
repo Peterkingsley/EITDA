@@ -7,21 +7,21 @@ const tracks = [
   {
     number: '01',
     title: 'Find Your Value',
-    copy: 'We break down your experience, skills and knowledge to discover the problems you are already equipped to solve.',
+    copy: 'Break down your experience, skills and knowledge to discover the problems you are already equipped to solve.',
     image: '/photos/speaker.jpg',
     alt: 'An EITDA participant sharing a practical demonstration',
   },
   {
     number: '02',
     title: 'Package What You Know',
-    copy: 'We turn your experience into a clear service, role, solution or contribution that a company, founder or organisation can understand and use.',
+    copy: 'Turn your experience into a clear service, role, solution or contribution that a company, founder or organisation can understand and use.',
     image: '/photos/conversation.jpg',
     alt: 'EITDA participants connecting after a session',
   },
   {
     number: '03',
     title: 'Take It To Market',
-    copy: 'We teach you how to position yourself, find the people who need your expertise, communicate your value and turn opportunities into income.',
+    copy: 'Learn how to position yourself, find the people who need your expertise, communicate your value and turn opportunities into income.',
     image: '/photos/collaboration.jpg',
     alt: 'Participants collaborating during the EITDA event',
   },
@@ -30,7 +30,7 @@ const tracks = [
 const pathway = [
   {
     step: 'A Clearer Positioning',
-    copy: 'We help you understand what part of your experience is valuable and how to describe it in a way companies, founders and organisations understand.',
+    copy: 'Know what part of your experience is valuable and how to describe it in a way companies, founders and organisations understand.',
   },
   {
     step: 'A Market To Target',
@@ -516,21 +516,30 @@ export default function Home() {
 
         <div className="community-copy">
           <p className="eyebrow dark">
-            <span /> From one edition to the next
+            <span /> From the first edition to EITDA 2.0
           </p>
 
-          <h2>Opportunity grows when knowledge is shared.</h2>
+          <h2>
+            We&apos;ve seen what happens when people see their value.
+          </h2>
 
-          <p>
-            Our first edition in December 2025 showed what happens when access,
-            practical learning, and community meet. The second edition builds on
-            that momentum and opens the door to even more young people.
-          </p>
+          <div className="community-proof-copy">
+            <p>
+              The first edition of EITDA brought people together to learn,
+              connect and discover new possibilities in the digital economy.
+            </p>
 
-          <div className="impact-principles">
-            <span>Accessible learning</span>
-            <span>Practical guidance</span>
-            <span>Peer support</span>
+            <p>
+              EITDA 2.0 builds on that foundation with a sharper mission:
+              helping people recognise the market value of the knowledge,
+              skills and experience they already have.
+            </p>
+          </div>
+
+          <div className="impact-principles" aria-label="What defined the first EITDA edition">
+            <span>Real people</span>
+            <span>Real conversations</span>
+            <span>Real opportunities</span>
           </div>
         </div>
       </section>
