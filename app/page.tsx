@@ -190,17 +190,19 @@ export default function Home() {
         </div>
 
         <div className="intro-copy">
-          <h2>The digital economy should work for everyone.</h2>
+          <h2>
+            You don&apos;t have to
+            <br />
+            start from zero.
+          </h2>
 
           <p>
-            Whether you are a banker, doctor, trader, teacher, lecturer, civil
-            servant, artisan, entrepreneur, politician or professional, you have
-            accumulated knowledge from doing something repeatedly. The question
-            is whether you know where that knowledge is valuable.
-
-            Come with your experience. Leave knowing who needs it, what problem 
-            you can solve, how to package your value and how to position yourself 
-            to get paid for it.
+            Too many people think earning in the digital economy means learning
+            to code, becoming a creator or starting an entirely new career. EITDA
+            starts with what you already know and shows you how experience from
+            banking, medicine, teaching, trading, public service, business and
+            other fields can become valuable to startups, companies and growing
+            teams.
           </p>
         </div>
       </section>
