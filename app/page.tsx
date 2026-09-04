@@ -130,12 +130,7 @@ export default function Home() {
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a
-          className="nav-cta"
-          href={SELAR_TICKET_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="nav-cta" href="#tickets">
           Book tickets
           <ArrowUpRight size={17} aria-hidden="true" />
         </a>
@@ -157,25 +152,21 @@ export default function Home() {
           </p>
 
           <h1>
-            Learn the skills.
+            Your experience.
             <br />
-            Build your future.
+            Can earn more.
           </h1>
 
           <p className="hero-copy">
-            Earning in the Digital Age returns for its second edition—an Eshiet
-            Foundation youth empowerment experience helping a new generation
-            turn digital skills into opportunity.
+            EITDA helps professionals, business owners, workers and everyday
+            people discover where their existing knowledge is valuable, how to
+            package it, and how to position themselves for companies and
+            opportunities willing to pay for it.
           </p>
 
           <div className="hero-actions">
-            <a
-              className="button button-yellow"
-              href={SELAR_TICKET_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book your ticket
+            <a className="button button-yellow" href="#tickets">
+              Choose your ticket
               <ArrowDownRight size={20} aria-hidden="true" />
             </a>
 
@@ -202,10 +193,14 @@ export default function Home() {
           <h2>The digital economy should work for everyone.</h2>
 
           <p>
-            EITDA creates a practical bridge between ambition and access. We
-            bring learning, real-world guidance, and community into one place so
-            young people can move from consuming technology to creating value
-            with it.
+            Whether you are a banker, doctor, trader, teacher, lecturer, civil
+            servant, artisan, entrepreneur, politician or professional, you have
+            accumulated knowledge from doing something repeatedly. The question
+            is whether you know where that knowledge is valuable.
+
+            Come with your experience. Leave knowing who needs it, what problem 
+            you can solve, how to package your value and how to position yourself 
+            to get paid for it.
           </p>
         </div>
       </section>
@@ -555,13 +550,8 @@ export default function Home() {
             ₦15,000.
           </p>
 
-          <a
-            className="button button-yellow"
-            href={SELAR_TICKET_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book your ticket
+          <a className="button button-yellow" href="#tickets">
+            Choose your ticket
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
         </div>
