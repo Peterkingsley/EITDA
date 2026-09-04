@@ -330,7 +330,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Get general access
+              Reserve My Free Access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -378,7 +378,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              Get VIP access
+              Reserve My VIP access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
