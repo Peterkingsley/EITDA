@@ -378,7 +378,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              RESERVE MY VIP EXPERIENCE
+              RESERVE MY VIP ACCESS
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -624,7 +624,7 @@ export default function Home() {
           </p>
 
           <a className="button button-yellow" href="#tickets">
-            I’M READY — SHOW MY OPTIONS →
+            I’M READY — SHOW MY OPTIONS
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
         </div>
