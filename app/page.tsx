@@ -141,7 +141,7 @@ export default function Home() {
         </nav>
 
         <a className="nav-cta" href="#tickets">
-          SEE TICKET OPTIONS
+          Book tickets
           <ArrowUpRight size={17} aria-hidden="true" />
         </a>
       </header>
@@ -162,9 +162,9 @@ export default function Home() {
           </p>
 
           <h1>
-            Your experience
+            Your experience.
             <br />
-            Can earn more
+            Can earn more.
           </h1>
 
           <p className="hero-copy">
@@ -330,7 +330,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              RESERVE MY FREE ACCESS
+              Get general access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -378,7 +378,7 @@ export default function Home() {
               rel="noopener noreferrer"
               style={{ marginTop: 'auto', width: 'max-content' }}
             >
-              RESERVE MY VIP ACCESS
+              Get VIP access
               <ArrowUpRight size={18} aria-hidden="true" />
             </a>
           </article>
@@ -548,9 +548,9 @@ export default function Home() {
         <p>Our belief</p>
 
         <h2>
-          WHAT YOU KNOW 
+          Talent is everywhere.
           <br />
-          <em>SHOULD OPEN MORE DOORS.</em>
+          <em>Access should be too.</em>
         </h2>
 
         <div className="manifesto-mark" aria-hidden="true">
@@ -624,33 +624,72 @@ export default function Home() {
           </p>
 
           <a className="button button-yellow" href="#tickets">
-            I’M READY — SHOW MY OPTIONS
+            Choose your ticket
             <ArrowUpRight size={20} aria-hidden="true" />
           </a>
         </div>
       </section>
 
       <footer>
-        <div className="footer-brand">
-          <img
-            src="/eshiet-foundation-full-logo.png"
-            alt="Eshiet Foundation"
-          />
+        <div className="footer-top">
+          <div className="footer-brand">
+            <img
+              src="/eshiet-foundation-full-logo.png"
+              alt="Eshiet Foundation"
+            />
 
-          <div>
-            <strong>EITDA</strong>
-            <span>Earning in the Digital Age</span>
+            <div>
+              <strong>EITDA</strong>
+              <span>Earning in the Digital Age</span>
+            </div>
           </div>
+
+          <nav aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#programme">Programme</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#tickets">Tickets</a>
+            <a href="#impact">Impact</a>
+            <a href="#faq">FAQ</a>
+          </nav>
         </div>
 
-        <nav aria-label="Footer navigation">
-          <a href="#about">About</a>
-          <a href="#programme">Programme</a>
-          <a href="#speakers">Speakers</a>
-          <a href="#tickets">Tickets</a>
-          <a href="#impact">Impact</a>
-          <a href="#faq">FAQ</a>
-        </nav>
+        <div className="footer-socials">
+          <div className="footer-socials-copy">
+            <span>Stay connected</span>
+            <strong>Follow the journey beyond the event.</strong>
+          </div>
+
+          <div className="footer-social-links" aria-label="Eshiet Foundation social channels">
+            <a
+              href="https://x.com/EshietS12477"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Eshiet Foundation on X"
+            >
+              <span className="social-mark" aria-hidden="true">X</span>
+              <span className="social-link-copy">
+                <small>Follow us on</small>
+                <strong>X</strong>
+              </span>
+              <span className="social-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              href="https://whatsapp.com/channel/0029Vb86kPQ2ZjCmbY8RrY1x"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join the Eshiet Foundation WhatsApp Channel"
+            >
+              <span className="social-mark whatsapp-mark" aria-hidden="true">W</span>
+              <span className="social-link-copy">
+                <small>Join our</small>
+                <strong>WhatsApp Channel</strong>
+              </span>
+              <span className="social-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
 
         <div className="footer-bottom">
           <span>An initiative of Eshiet Foundation</span>
