@@ -271,21 +271,14 @@ export default function Home() {
             </p>
 
             <ul
+              className="ticket-benefits general-benefits"
               aria-label="General admission benefits"
-              style={{
-                display: 'grid',
-                gap: '12px',
-                margin: '26px 0 34px',
-                padding: 0,
-                listStyle: 'none',
-                color: '#07101f',
-              }}
             >
-              <li>✓ Full access to the main EITDA 2.0 event</li>
-              <li>✓ Access to speaker sessions and presentations</li>
-              <li>✓ Practical digital economy conversations and demonstrations</li>
-              <li>✓ General networking opportunities</li>
-              <li>✓ Access to participating brands and event experiences</li>
+              <li>Full access to the main EITDA 2.0 event</li>
+              <li>Access to speaker sessions and presentations</li>
+              <li>Practical digital economy conversations and demonstrations</li>
+              <li>General networking opportunities</li>
+              <li>Access to participating brands and event experiences</li>
             </ul>
 
             <a
@@ -327,7 +320,7 @@ export default function Home() {
               the event.
             </p>
 
-            <ul className="vip-benefits" aria-label="VIP Pass benefits">
+            <ul className="ticket-benefits vip-benefits" aria-label="VIP Pass benefits">
               <li>Reserved front-row seating</li>
               <li>Full event recording</li>
               <li>Special after-event access to participating speakers</li>

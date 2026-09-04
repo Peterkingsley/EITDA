@@ -140,9 +140,45 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--yellow); outli
 .ticket-card > strong { display: block; margin: 38px 0 18px; font-size: clamp(58px, 6.6vw, 94px); line-height: .84; letter-spacing: -.065em; text-transform: uppercase; }
 .ticket-card > strong small { font-size: .52em; vertical-align: top; }
 .ticket-card > p { max-width: 470px; margin: 0; font-size: 16px; font-weight: 550; line-height: 1.6; }
-.vip-benefits { display: grid; gap: 12px; margin: 26px 0 34px; padding: 0; list-style: none; color: #f2f5fb; }
-.vip-benefits li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; font-size: 14px; font-weight: 650; line-height: 1.45; }
-.vip-benefits li::before { content: '\2713'; color: var(--yellow); font-size: 15px; font-weight: 900; }
+.ticket-benefits {
+  display: grid;
+  gap: 12px;
+  margin: 26px 0 34px;
+  padding: 0;
+  list-style: none;
+}
+
+.ticket-benefits li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.ticket-benefits li::before {
+  content: '\2713';
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.general-benefits {
+  color: var(--ink);
+}
+
+.general-benefits li::before {
+  color: var(--blue);
+}
+
+.vip-benefits {
+  color: #f2f5fb;
+}
+
+.vip-benefits li::before {
+  color: var(--yellow);
+}
 .ticket-card .ticket-status { width: max-content; max-width: 100%; margin-top: auto; padding: 11px 14px; font-size: 10px; font-weight: 850; letter-spacing: .08em; line-height: 1.35; text-transform: uppercase; }
 .ticket-free { background: var(--paper); color: var(--ink); }
 .ticket-free .ticket-status { background: var(--blue); color: var(--white); }
@@ -290,6 +326,19 @@ footer nav { display: flex; justify-content: flex-end; gap: clamp(20px, 4vw, 58p
   .fact-copy strong { font-size: 11px; }
   .fact-copy em { font-size: 9px; }
   .ticket-card { min-height: 0; }
+  .ticket-benefits {
+    gap: 10px;
+    margin: 22px 0 28px;
+  }
+  .ticket-benefits li {
+    grid-template-columns: 18px minmax(0, 1fr);
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .ticket-benefits li::before {
+    font-size: 14px;
+  }
   .event-venue { grid-template-columns: 1fr; }
   .event-place-block { border-top: 1px solid rgba(255,255,255,.18); border-left: 0; }
   .event-date-block, .event-place-block { padding: 28px; }
