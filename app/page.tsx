@@ -548,9 +548,9 @@ export default function Home() {
         <p>Our belief</p>
 
         <h2>
-          Talent is everywhere.
+          WHAT YOU KNOW 
           <br />
-          <em>Access should be too.</em>
+          <em>SHOULD OPEN MORE DOORS.</em>
         </h2>
 
         <div className="manifesto-mark" aria-hidden="true">
