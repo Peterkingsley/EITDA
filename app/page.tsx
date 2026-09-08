@@ -243,17 +243,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="early-conversion" aria-label="Reserve free access">
-        <div>
-          <p className="eyebrow dark"><span /> Start here</p>
-          <h2>Reserve your free access early.</h2>
-        </div>
-        <div>
-          <p>Join physically in Ikot Abasi or virtually from anywhere. General Access is free; VIP adds the recording, private community and closer speaker access.</p>
-          <a className="button button-blue" href={SELAR_TICKET_URL} target="_blank" rel="noopener noreferrer">Reserve free access <ArrowUpRight size={18} aria-hidden="true" /></a>
-        </div>
-      </section>
-
       <ValueAssessment />
 
       <section className="event-details" id="tickets">
