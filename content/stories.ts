@@ -104,8 +104,8 @@ const stories: Story[] = [
     publishedAt: '2026-09-08',
     status: 'published',
     image: {
-      src: '/photos/stage-moment.jpg',
-      alt: 'A speaker addressing the EITDA audience',
+      src: '/drive-stories/e-4.jpg',
+      alt: 'A speaker sharing ideas with participants at an EITDA session',
     },
     introduction:
       'There are hundreds of teams building stablecoin payment products. From the outside, many of them can look almost identical. That is exactly why the people building in this space need better conversations about customers, distribution and the problems they are actually solving.',
@@ -149,8 +149,8 @@ const stories: Story[] = [
     publishedAt: '2026-09-08',
     status: 'published',
     image: {
-      src: '/photos/learning.jpg',
-      alt: 'Participants learning together at EITDA',
+      src: '/drive-stories/e-3.jpg',
+      alt: 'A speaker explaining an idea to the EITDA audience',
     },
     introduction:
       'A good conference does not leave you with a collection of quotes and photographs. It helps you see a problem in your own life more clearly and gives you a practical next step.',
@@ -194,8 +194,8 @@ const stories: Story[] = [
     publishedAt: '2026-09-08',
     status: 'published',
     image: {
-      src: '/photos/collaboration.jpg',
-      alt: 'Professionals collaborating during an EITDA session',
+      src: '/drive-stories/e-47.jpg',
+      alt: 'Two EITDA participants standing together after a session',
     },
     introduction:
       'Two people can do similar work and earn very different amounts. The difference is often not another skill. It is the customer they serve and the value that customer attaches to the problem.',
@@ -239,8 +239,8 @@ const stories: Story[] = [
     publishedAt: '2026-09-08',
     status: 'published',
     image: {
-      src: '/photos/team.jpg',
-      alt: 'A team working together during the EITDA experience',
+      src: '/drive-stories/e-6.jpg',
+      alt: 'Participants celebrating the EITDA experience',
     },
     introduction:
       'Sometimes what looks like excellent marketing is a company moving quickly enough to give its marketing team something real to talk about.',
@@ -283,7 +283,10 @@ const stories: Story[] = [
     author: 'EITDA Editorial',
     publishedAt: '2026-09-07',
     status: 'published',
-    image: { src: '/photos/session.jpg', alt: 'An EITDA session in progress' },
+    image: {
+      src: '/drive-stories/e-2.jpg',
+      alt: 'A participant speaking with an EITDA facilitator',
+    },
     introduction:
       'The technology behind a payment product can be complex. The reason a customer chooses it should be simple.',
     sections: [
@@ -325,8 +328,8 @@ const stories: Story[] = [
     publishedAt: '2026-08-18',
     status: 'published',
     image: {
-      src: '/photos/learning.jpg',
-      alt: 'Participants sharing knowledge at EITDA',
+      src: '/drive-stories/e-93.jpg',
+      alt: 'A speaker holding a microphone during an EITDA session',
     },
     introduction:
       '“Marketing consultant” is broad. “I help early-stage fintech companies build their first repeatable customer-acquisition process” gives a buyer something they can understand.',
@@ -370,8 +373,8 @@ const stories: Story[] = [
     publishedAt: '2026-08-18',
     status: 'published',
     image: {
-      src: '/photos/conversation.jpg',
-      alt: 'A focused conversation between EITDA participants',
+      src: '/drive-stories/e-31.jpg',
+      alt: 'An EITDA facilitator speaking with participants in a classroom',
     },
     introduction:
       'Customer conversations are not a final check after the product is built. They are one of the earliest tools for deciding what deserves to be built.',
@@ -415,8 +418,8 @@ const stories: Story[] = [
     publishedAt: '2026-08-18',
     status: 'published',
     image: {
-      src: '/photos/connections.jpg',
-      alt: 'EITDA participants connecting after a session',
+      src: '/drive-stories/e-67.jpg',
+      alt: 'Participants presenting a partnership moment at EITDA',
     },
     introduction:
       'A long list of meetings can create the feeling of progress while promising relationships quietly lose momentum.',
@@ -459,8 +462,8 @@ const stories: Story[] = [
     publishedAt: '2026-08-18',
     status: 'published',
     image: {
-      src: '/photos/community-four.jpg',
-      alt: 'A community conversation at EITDA',
+      src: '/drive-stories/e-63.jpg',
+      alt: 'The EITDA community gathered for a group photograph',
     },
     introduction:
       'Web3 adoption will not begin with customers learning blockchain vocabulary. It will begin with ordinary problems being solved better.',
@@ -503,8 +506,8 @@ const stories: Story[] = [
     publishedAt: '2026-08-18',
     status: 'published',
     image: {
-      src: '/photos/host.jpg',
-      alt: 'An EITDA host guiding a practical conversation',
+      src: '/drive-stories/e.jpg',
+      alt: 'An attendee listening during an EITDA session',
     },
     introduction:
       'A dashboard can show rising sign-ups while the business is simply renting attention through incentives.',
