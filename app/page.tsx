@@ -46,12 +46,24 @@ const pathway = [
 ];
 
 const speakerTeasers = [
-  { number: '01', note: 'Founder / Operator', prompt: 'Who do you think this is?' },
+  {
+    number: '01',
+    note: 'Founder / Operator',
+    prompt: 'Who do you think this is?',
+  },
   { number: '02', note: 'Industry Professional', prompt: 'Revealing soon' },
-  { number: '03', note: 'Builder / Advisor', prompt: 'Speaker reveal coming soon' },
+  {
+    number: '03',
+    note: 'Builder / Advisor',
+    prompt: 'Speaker reveal coming soon',
+  },
   { number: '04', note: 'Market Expert', prompt: 'Who is joining the room?' },
   { number: '05', note: 'Founder / Operator', prompt: 'Revealing soon' },
-  { number: '06', note: 'Industry Professional', prompt: 'Speaker reveal coming soon' },
+  {
+    number: '06',
+    note: 'Industry Professional',
+    prompt: 'Speaker reveal coming soon',
+  },
 ];
 
 const faqs = [
@@ -186,11 +198,11 @@ export default function Home() {
 
           <p>
             Too many people think earning in the digital economy means learning
-            to code, becoming a creator or starting an entirely new career. EITDA
-            starts with what you already know and shows you how experience from
-            banking, medicine, teaching, trading, public service, business and
-            other fields can become valuable to startups, companies and growing
-            teams.
+            to code, becoming a creator or starting an entirely new career.
+            EITDA starts with what you already know and shows you how experience
+            from banking, medicine, teaching, trading, public service, business
+            and other fields can become valuable to startups, companies and
+            growing teams.
           </p>
         </div>
       </section>
@@ -228,7 +240,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
 
       <section className="event-details" id="tickets">
         <div className="event-details-top">
@@ -286,9 +297,7 @@ export default function Home() {
               </del>
             </strong>
 
-            <p>
-              Attend physically or join virtually at no ticket cost.
-            </p>
+            <p>Attend physically or join virtually at no ticket cost.</p>
 
             <ul
               className="ticket-benefits general-benefits"
@@ -340,7 +349,10 @@ export default function Home() {
               access beyond the main event.
             </p>
 
-            <ul className="ticket-benefits vip-benefits" aria-label="VIP Experience benefits">
+            <ul
+              className="ticket-benefits vip-benefits"
+              aria-label="VIP Experience benefits"
+            >
               <li>Full EITDA 2.0 premium experience</li>
               <li>Full event recording</li>
               <li>Private VIP WhatsApp community</li>
@@ -363,7 +375,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="speaker-reveal" id="speakers" aria-labelledby="speaker-reveal-title">
+      <section
+        className="speaker-reveal"
+        id="speakers"
+        aria-labelledby="speaker-reveal-title"
+      >
         <div className="speaker-reveal-heading">
           <p className="eyebrow">
             <span /> Speaker reveals · Coming soon
@@ -382,7 +398,10 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="speaker-marquee" aria-label="EITDA 2026 speaker announcements coming soon">
+        <div
+          className="speaker-marquee"
+          aria-label="EITDA 2026 speaker announcements coming soon"
+        >
           <div className="speaker-marquee-track">
             {[...speakerTeasers, ...speakerTeasers].map((speaker, index) => (
               <article
@@ -497,9 +516,7 @@ export default function Home() {
             <span /> From the first edition to EITDA 2.0
           </p>
 
-          <h2>
-            We&apos;ve seen what happens when people see their value.
-          </h2>
+          <h2>We&apos;ve seen what happens when people see their value.</h2>
 
           <div className="community-proof-copy">
             <p>
@@ -509,12 +526,15 @@ export default function Home() {
 
             <p>
               EITDA 2.0 builds on that foundation with a sharper mission:
-              helping people recognise the market value of the knowledge,
-              skills and experience they already have.
+              helping people recognise the market value of the knowledge, skills
+              and experience they already have.
             </p>
           </div>
 
-          <div className="impact-principles" aria-label="What defined the first EITDA edition">
+          <div
+            className="impact-principles"
+            aria-label="What defined the first EITDA edition"
+          >
             <span>Real people</span>
             <span>Real conversations</span>
             <span>Real opportunities</span>
@@ -576,7 +596,7 @@ export default function Home() {
       <section className="closing">
         <img
           className="closing-image"
-          src="/photos/session.jpg"
+          src="/drive-stories/e-4.jpg"
           alt=""
           aria-hidden="true"
           loading="lazy"
