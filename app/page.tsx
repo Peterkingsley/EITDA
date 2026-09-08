@@ -68,13 +68,6 @@ const speakerTeasers = [
   },
 ];
 
-const speakerExpertise = [
-  ['Founders / operators', 'How teams turn ideas into products, revenue and resilient organisations.'],
-  ['Industry professionals', 'What is changing inside established careers and where new value is emerging.'],
-  ['Builders / advisors', 'How to turn practical knowledge into digital services, systems and opportunities.'],
-  ['Market experts', 'Customers, pricing, positioning and the signals that help good work get noticed.'],
-];
-
 const faqs = [
   [
     'What is EITDA?',
@@ -453,15 +446,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="speaker-expertise-grid" aria-label="Speaker expertise categories">
-          {speakerExpertise.map(([title, copy]) => (
-            <article key={title}>
-              <span>What you will encounter</span>
-              <h3>{title}</h3>
-              <p>{copy}</p>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section className="pathway">

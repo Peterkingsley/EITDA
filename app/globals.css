@@ -1787,10 +1787,6 @@ footer nav a:hover {
 .attendee-story-card > div { padding: 26px; }
 .attendee-story-card h3 { margin: 16px 0 12px; font-size: clamp(24px, 2.3vw, 34px); line-height: 1.05; letter-spacing: -.04em; }
 .attendee-story-card p { margin: 0; color: #4c5562; line-height: 1.65; }
-.speaker-expertise-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin: 58px clamp(22px, 6vw, 96px) 0; border: 1px solid var(--line); background: var(--line); }
-.speaker-expertise-grid article { min-height: 190px; padding: 24px; background: #030813; }
-.speaker-expertise-grid h3 { margin: 28px 0 12px; font-size: 22px; letter-spacing: -.035em; }
-.speaker-expertise-grid p { margin: 0; color: #bfc9d9; line-height: 1.55; font-size: 14px; }
 .mid-page-cta { display: flex; justify-content: space-between; align-items: center; gap: 30px; padding: 54px clamp(22px, 6vw, 96px); background: var(--blue); color: var(--white); }
 .mid-page-cta h2 { max-width: 680px; margin: 12px 0 0; font-size: clamp(30px, 4vw, 56px); line-height: 1; letter-spacing: -.05em; }
 .mid-page-cta > div { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
@@ -1813,13 +1809,11 @@ footer nav a:hover {
 @media (max-width: 820px) {
   .early-conversion, .value-assessment, .attendee-stories-heading { grid-template-columns: 1fr; }
   .attendee-story-grid { grid-template-columns: 1fr; }
-  .speaker-expertise-grid { grid-template-columns: repeat(2, 1fr); }
   .mid-page-cta, .blog-whatsapp-cta, .blog-category-heading, .story-whatsapp-cta { align-items: flex-start; flex-direction: column; }
   .mid-page-cta { display: flex; }
 }
 
 @media (max-width: 560px) {
-  .speaker-expertise-grid { grid-template-columns: 1fr; }
   .assessment-result { padding: 22px; }
   .blog-category-group + .blog-category-group { margin-top: 64px; }
 }
