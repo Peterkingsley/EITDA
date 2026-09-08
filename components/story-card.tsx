@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import {
@@ -18,7 +17,7 @@ export function StoryCard({
 }) {
   return (
     <article className={`story-card${featured ? ' story-card-featured' : ''}`}>
-      <Link className="story-card-link" href={`/blog/${story.slug}`}>
+      <a className="story-card-link" href={`/blog/${story.slug}`}>
         <div className="story-card-image">
           <Image
             src={story.image.src}
@@ -49,7 +48,7 @@ export function StoryCard({
             Read story <ArrowUpRight size={20} aria-hidden="true" />
           </span>
         </div>
-      </Link>
+      </a>
     </article>
   );
 }

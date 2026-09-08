@@ -1,11 +1,10 @@
-import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 
 export function SiteHeader({ solid = false }: { solid?: boolean }) {
   return (
     <header className={`site-header${solid ? ' site-header-solid' : ''}`}>
-      <Link className="brand" href="/" aria-label="EITDA home">
+      <a className="brand" href="/" aria-label="EITDA home">
         <Image
           src="/eshiet-foundation-full-logo.png"
           alt="Eshiet Foundation"
@@ -17,32 +16,32 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
           <strong>EITDA</strong>
           <small>Second Edition · 2026</small>
         </span>
-      </Link>
+      </a>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
-        <Link href="/#about">About</Link>
-        <Link href="/#programme">Programme</Link>
-        <Link href="/#speakers">Speakers</Link>
-        <Link href="/#tickets">Tickets</Link>
-        <Link href="/#impact">Impact</Link>
-        <Link href="/#faq">FAQ</Link>
-        <Link href="/blog" aria-current={solid ? 'page' : undefined}>
+        <a href="/#about">About</a>
+        <a href="/#programme">Programme</a>
+        <a href="/#speakers">Speakers</a>
+        <a href="/#tickets">Tickets</a>
+        <a href="/#impact">Impact</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/blog" aria-current={solid ? 'page' : undefined}>
           Stories
-        </Link>
+        </a>
       </nav>
 
-      <Link
+      <a
         className="mobile-stories-link"
         href="/blog"
         aria-current={solid ? 'page' : undefined}
       >
         Stories
-      </Link>
+      </a>
 
-      <Link className="nav-cta" href="/#tickets">
+      <a className="nav-cta" href="/#tickets">
         Book tickets
         <ArrowUpRight size={17} aria-hidden="true" />
-      </Link>
+      </a>
     </header>
   );
 }

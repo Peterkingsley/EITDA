@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ArrowLeft } from 'lucide-react';
 import { getPublishedStories } from '@/content/stories';
@@ -40,9 +39,9 @@ export default function BlogPage() {
     <main id="blog-main">
       <section className="blog-intro">
         <div className="stories-container">
-          <Link className="blog-back-link" href="/">
+          <a className="blog-back-link" href="/">
             <ArrowLeft size={16} aria-hidden="true" /> Back to EITDA
-          </Link>
+          </a>
           <p className="section-kicker">The EITDA journal</p>
           <h1>
             Stories for your
@@ -75,9 +74,9 @@ export default function BlogPage() {
             <div className="blog-empty">
               <h2>The next story is on its way.</h2>
               <p>In the meantime, discover what we are building at EITDA.</p>
-              <Link className="button button-yellow" href="/#programme">
+              <a className="button button-yellow" href="/#programme">
                 Explore the programme
-              </Link>
+              </a>
             </div>
           )}
         </div>

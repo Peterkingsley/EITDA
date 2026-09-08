@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { getPublishedStories } from '@/content/stories';
 import { StoryCard } from '@/components/story-card';
@@ -23,9 +22,9 @@ export function StoriesPreview() {
               next chapter.
             </h2>
           </div>
-          <Link className="stories-all-link" href="/blog">
+          <a className="stories-all-link" href="/blog">
             All stories <ArrowUpRight size={20} aria-hidden="true" />
-          </Link>
+          </a>
         </div>
         <div className={stories.length === 1 ? 'story-feature' : 'story-grid'}>
           {stories.map((story) => (

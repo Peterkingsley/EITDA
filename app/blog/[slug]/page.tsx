@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -56,9 +55,9 @@ export default async function StoryPage({ params }: StoryPageProps) {
     <main id="blog-main">
       <article className="story-page">
         <header className="story-heading stories-container">
-          <Link className="blog-back-link" href="/blog">
+          <a className="blog-back-link" href="/blog">
             <ArrowLeft size={16} aria-hidden="true" /> All stories
-          </Link>
+          </a>
           <p className="story-category">{story.category}</p>
           <h1>{story.title}</h1>
           <p className="story-deck">{story.excerpt}</p>
@@ -146,13 +145,13 @@ export default async function StoryPage({ params }: StoryPageProps) {
                 Explore the EITDA journey: find your value, package what you
                 know and take it to market.
               </p>
-              <Link className="button button-yellow" href="/#programme">
+              <a className="button button-yellow" href="/#programme">
                 Explore EITDA <ArrowUpRight size={18} aria-hidden="true" />
-              </Link>
+              </a>
             </div>
-            <Link className="blog-back-link" href="/blog">
+            <a className="blog-back-link" href="/blog">
               <ArrowLeft size={16} aria-hidden="true" /> Back to all stories
-            </Link>
+            </a>
           </div>
         </div>
       </article>

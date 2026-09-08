@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export function SiteFooter() {
@@ -21,13 +20,13 @@ export function SiteFooter() {
         </div>
 
         <nav aria-label="Footer navigation">
-          <Link href="/#about">About</Link>
-          <Link href="/#programme">Programme</Link>
-          <Link href="/#speakers">Speakers</Link>
-          <Link href="/#tickets">Tickets</Link>
-          <Link href="/#impact">Impact</Link>
-          <Link href="/#faq">FAQ</Link>
-          <Link href="/blog">Stories</Link>
+          <a href="/#about">About</a>
+          <a href="/#programme">Programme</a>
+          <a href="/#speakers">Speakers</a>
+          <a href="/#tickets">Tickets</a>
+          <a href="/#impact">Impact</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/blog">Stories</a>
         </nav>
       </div>
 
