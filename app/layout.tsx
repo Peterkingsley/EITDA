@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import { SITE_URL } from '@/lib/site';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -13,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: SITE_URL,
   title: 'EITDA — Earning in the Digital Age',
   description:
     'The second edition of EITDA takes place 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom. General admission is free and VIP tickets are ₦15,000.',
