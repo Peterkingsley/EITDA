@@ -22,6 +22,9 @@ export async function generateMetadata({
   const { slug } = await params;
   const story = getStory(slug);
   if (!story) notFound();
+  const relatedStories = getPublishedStories()
+    .filter((candidate) => candidate.slug !== story.slug && candidate.category === story.category)
+    .slice(0, 2);
   const title = `${story.title} | EITDA`;
   const image = new URL(story.image.src, SITE_URL).href;
   return {
@@ -149,6 +152,16 @@ export default async function StoryPage({ params }: StoryPageProps) {
                 Explore EITDA <ArrowUpRight size={18} aria-hidden="true" />
               </a>
             </div>
+            {relatedStories.length > 0 && (
+              <section className="related-stories" aria-labelledby="related-stories-title">
+                <p className="section-kicker">Keep reading</p>
+                <h2 id="related-stories-title">More from {story.category}.</h2>
+                <div className="related-story-links">
+                  {relatedStories.map((related) => <a key={related.slug} href={`/blog/${related.slug}`}>{related.title}<ArrowUpRight size={16} aria-hidden="true" /></a>)}
+                </div>
+              </section>
+            )}
+            <div className="story-whatsapp-cta"><p>Get new EITDA stories in your WhatsApp feed.</p><a href="https://whatsapp.com/channel/0029Vb86kPQ2ZjCmbY8RrY1x" target="_blank" rel="noopener noreferrer">Join the channel <ArrowUpRight size={15} aria-hidden="true" /></a></div>
             <a className="blog-back-link" href="/blog">
               <ArrowLeft size={16} aria-hidden="true" /> Back to all stories
             </a>

@@ -2,6 +2,8 @@ import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { StoriesPreview } from '@/components/stories-preview';
+import { ValueAssessment } from '@/components/value-assessment';
+import { AttendeeStories } from '@/components/attendee-stories';
 
 const SELAR_TICKET_URL = 'https://selar.com/817383or48';
 const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
@@ -64,6 +66,13 @@ const speakerTeasers = [
     note: 'Industry Professional',
     prompt: 'Speaker reveal coming soon',
   },
+];
+
+const speakerExpertise = [
+  ['Founders / operators', 'How teams turn ideas into products, revenue and resilient organisations.'],
+  ['Industry professionals', 'What is changing inside established careers and where new value is emerging.'],
+  ['Builders / advisors', 'How to turn practical knowledge into digital services, systems and opportunities.'],
+  ['Market experts', 'Customers, pricing, positioning and the signals that help good work get noticed.'],
 ];
 
 const faqs = [
@@ -240,6 +249,19 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className="early-conversion" aria-label="Reserve free access">
+        <div>
+          <p className="eyebrow dark"><span /> Start here</p>
+          <h2>Reserve your free access early.</h2>
+        </div>
+        <div>
+          <p>Join physically in Ikot Abasi or virtually from anywhere. General Access is free; VIP adds the recording, private community and closer speaker access.</p>
+          <a className="button button-blue" href={SELAR_TICKET_URL} target="_blank" rel="noopener noreferrer">Reserve free access <ArrowUpRight size={18} aria-hidden="true" /></a>
+        </div>
+      </section>
+
+      <ValueAssessment />
 
       <section className="event-details" id="tickets">
         <div className="event-details-top">
@@ -430,6 +452,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <div className="speaker-expertise-grid" aria-label="Speaker expertise categories">
+          {speakerExpertise.map(([title, copy]) => (
+            <article key={title}>
+              <span>What you will encounter</span>
+              <h3>{title}</h3>
+              <p>{copy}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="pathway">
@@ -497,6 +529,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AttendeeStories />
+
       <section className="community" id="impact">
         <div className="community-image-wrap">
           <img
@@ -543,6 +577,15 @@ export default function Home() {
       </section>
 
       <StoriesPreview />
+
+      <section className="mid-page-cta" aria-label="Reserve EITDA access">
+        <p className="section-kicker">Keep your place in the room</p>
+        <h2>Ready to see where your experience can go?</h2>
+        <div>
+          <a className="button button-yellow" href={SELAR_TICKET_URL} target="_blank" rel="noopener noreferrer">Reserve free access <ArrowUpRight size={18} aria-hidden="true" /></a>
+          <a className="text-link" href={SELAR_VIP_URL} target="_blank" rel="noopener noreferrer">Explore VIP <ArrowUpRight size={17} aria-hidden="true" /></a>
+        </div>
+      </section>
 
       <section className="manifesto">
         <p>Our belief</p>
