@@ -1392,7 +1392,7 @@ footer nav a:hover {
   display: grid;
   grid-template-columns: minmax(240px, 0.72fr) minmax(520px, 1.28fr);
   gap: clamp(30px, 5vw, 72px);
-  align-items: end;
+  align-items: start;
   margin-top: 64px;
   padding-top: 34px;
   border-top: 1px solid var(--line);
@@ -1447,20 +1447,26 @@ footer nav a:hover {
   background: rgba(255, 196, 0, 0.055);
 }
 
+.footer-social-links > a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+}
+
 .social-mark {
   display: grid;
   place-items: center;
   width: 46px;
   height: 46px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  background: #0a1221;
-  font-size: 17px;
-  font-weight: 900;
-  letter-spacing: -0.04em;
+  border-radius: 50%;
+  background: #000;
+  color: var(--white);
 }
 
-.whatsapp-mark {
-  color: var(--yellow);
+.social-mark svg {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .social-link-copy {
