@@ -1,0 +1,170 @@
+{
+  "/drive-stories/e-2.jpg": {
+    "src": "/optimized/80fdf2805d5cd4ab-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/04a811e1c5b09659-480.webp 480w, /optimized/80fdf2805d5cd4ab-800.webp 800w, /optimized/54fdc1f4e9901ffd-1280.webp 1280w, /optimized/78e440e77add14e0-1600.webp 1600w"
+  },
+  "/drive-stories/e-3.jpg": {
+    "src": "/optimized/3a5f663e6360fdfb-800.webp",
+    "width": 4393,
+    "height": 3456,
+    "srcSet": "/optimized/c42e1936494d38ca-480.webp 480w, /optimized/3a5f663e6360fdfb-800.webp 800w, /optimized/fffd0c3c938bfeb1-1280.webp 1280w, /optimized/93e4c1e5f37d4c98-1600.webp 1600w"
+  },
+  "/drive-stories/e-31.jpg": {
+    "src": "/optimized/75c43045a954f20e-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/3498984eb837d10f-480.webp 480w, /optimized/75c43045a954f20e-800.webp 800w, /optimized/544286da72829cb0-1280.webp 1280w, /optimized/9e318405ba05d900-1600.webp 1600w"
+  },
+  "/drive-stories/e-4.jpg": {
+    "src": "/optimized/51a861383686f286-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/a0e167985bf901b7-480.webp 480w, /optimized/51a861383686f286-800.webp 800w, /optimized/3292f94a33b536e4-1280.webp 1280w, /optimized/b092d58254ffab4e-1600.webp 1600w"
+  },
+  "/drive-stories/e-47.jpg": {
+    "src": "/optimized/e1aa27322baabfb3-800.webp",
+    "width": 4571,
+    "height": 3456,
+    "srcSet": "/optimized/be78619cf8d1180a-480.webp 480w, /optimized/e1aa27322baabfb3-800.webp 800w, /optimized/d4bd30c03ddbfff8-1280.webp 1280w, /optimized/0ecae156551595d1-1600.webp 1600w"
+  },
+  "/drive-stories/e-6.jpg": {
+    "src": "/optimized/3a291bfac68cdaba-800.webp",
+    "width": 4870,
+    "height": 3247,
+    "srcSet": "/optimized/2c848a6cbfc4d0cd-480.webp 480w, /optimized/3a291bfac68cdaba-800.webp 800w, /optimized/07ef25d4cdf461ae-1280.webp 1280w, /optimized/0e0497bc99098ead-1600.webp 1600w"
+  },
+  "/drive-stories/e-63.jpg": {
+    "src": "/optimized/afebaa79221708e7-800.webp",
+    "width": 5039,
+    "height": 3144,
+    "srcSet": "/optimized/6d8f2eef8cc32b17-480.webp 480w, /optimized/afebaa79221708e7-800.webp 800w, /optimized/436e722a0283e36b-1280.webp 1280w, /optimized/387a707211357e1d-1600.webp 1600w"
+  },
+  "/drive-stories/e-67.jpg": {
+    "src": "/optimized/96ecf54ebf4f156f-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/e377503e61515c8d-480.webp 480w, /optimized/96ecf54ebf4f156f-800.webp 800w, /optimized/0f178174f519b7a8-1280.webp 1280w, /optimized/a76e29b29b761acf-1600.webp 1600w"
+  },
+  "/drive-stories/e-93.jpg": {
+    "src": "/optimized/3876cd2871bf5d46-800.webp",
+    "width": 2916,
+    "height": 5184,
+    "srcSet": "/optimized/b4fe6308639eba55-480.webp 480w, /optimized/3876cd2871bf5d46-800.webp 800w, /optimized/b7e0f925bb2bc01d-1080.webp 1080w"
+  },
+  "/drive-stories/e.jpg": {
+    "src": "/optimized/3efa0a2db8b2bef4-800.webp",
+    "width": 3456,
+    "height": 4226,
+    "srcSet": "/optimized/aad74e1a29964290-480.webp 480w, /optimized/3efa0a2db8b2bef4-800.webp 800w, /optimized/d89da843bf7e4305-1280.webp 1280w, /optimized/2ab11caac3133c5c-1570.webp 1570w"
+  },
+  "/eitda-community.jpg": {
+    "src": "/optimized/4cf7a049523695fc-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/bda7e697b7c7d59f-480.webp 480w, /optimized/4cf7a049523695fc-800.webp 800w, /optimized/223781e1962563c4-1280.webp 1280w, /optimized/0ae037636161656a-1600.webp 1600w"
+  },
+  "/eshiet-foundation-full-logo.png": {
+    "src": "/optimized/d0fae488cb91de0e-320.webp",
+    "width": 600,
+    "height": 200,
+    "srcSet": "/optimized/7bb0990b25b847c1-160.webp 160w, /optimized/d0fae488cb91de0e-320.webp 320w, /optimized/6008437e70160e7f-600.webp 600w"
+  },
+  "/eshiet-foundation-logo.png": {
+    "src": "/optimized/f9c8671437c5ae01-320.webp",
+    "width": 1254,
+    "height": 1254,
+    "srcSet": "/optimized/680fa198f01256df-160.webp 160w, /optimized/f9c8671437c5ae01-320.webp 320w, /optimized/f0bb44f3cebb525b-600.webp 600w"
+  },
+  "/hhh.png": {
+    "src": "/optimized/8d616dee9d81d798-100.webp",
+    "width": 100,
+    "height": 100,
+    "srcSet": "/optimized/8d616dee9d81d798-100.webp 100w"
+  },
+  "/hj hj.png": {
+    "src": "/optimized/9df7f553146406f9-600.webp",
+    "width": 600,
+    "height": 200,
+    "srcSet": "/optimized/fadd86b79d281f01-480.webp 480w, /optimized/9df7f553146406f9-600.webp 600w"
+  },
+  "/hjkj.png": {
+    "src": "/optimized/b2463abd7bf8ea97-69.webp",
+    "width": 69,
+    "height": 32,
+    "srcSet": "/optimized/b2463abd7bf8ea97-69.webp 69w"
+  },
+  "/JGJUJH.png": {
+    "src": "/optimized/1ba55146d6025eee-100.webp",
+    "width": 100,
+    "height": 50,
+    "srcSet": "/optimized/1ba55146d6025eee-100.webp 100w"
+  },
+  "/photos/attendees.jpg": {
+    "src": "/optimized/30e28932169d71a1-800.webp",
+    "width": 4772,
+    "height": 3456,
+    "srcSet": "/optimized/3886d2f6f522b954-480.webp 480w, /optimized/30e28932169d71a1-800.webp 800w, /optimized/b0bd03db3c985eb9-1280.webp 1280w, /optimized/66878050b3f2ccf9-1600.webp 1600w"
+  },
+  "/photos/collaboration.jpg": {
+    "src": "/optimized/74cf24ca8188bc94-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/0f7a2d597ba59e3a-480.webp 480w, /optimized/74cf24ca8188bc94-800.webp 800w, /optimized/21558c25fbe8f5b4-1280.webp 1280w, /optimized/1b013735d4a4d6a0-1600.webp 1600w"
+  },
+  "/photos/community-four.jpg": {
+    "src": "/optimized/2eebbccb97ebec9f-800.webp",
+    "width": 4872,
+    "height": 3044,
+    "srcSet": "/optimized/8a82f9fee2fb8685-480.webp 480w, /optimized/2eebbccb97ebec9f-800.webp 800w, /optimized/8410e900f1b2fd3f-1280.webp 1280w, /optimized/f8323fe3c9a80d76-1600.webp 1600w"
+  },
+  "/photos/connections.jpg": {
+    "src": "/optimized/4d5dca129e668f33-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/b5f2fdf61113fe19-480.webp 480w, /optimized/4d5dca129e668f33-800.webp 800w, /optimized/67ed9a6b88594bbc-1280.webp 1280w, /optimized/5075071ab4bed169-1600.webp 1600w"
+  },
+  "/photos/conversation.jpg": {
+    "src": "/optimized/dd67db69dfa0bb2c-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/7a572b5553556009-480.webp 480w, /optimized/dd67db69dfa0bb2c-800.webp 800w, /optimized/ebe3aab1108cf783-1280.webp 1280w, /optimized/f1eaa921a0b0f415-1600.webp 1600w"
+  },
+  "/photos/host.jpg": {
+    "src": "/optimized/785bb1225647189f-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/b1a6cdc42e1d117f-480.webp 480w, /optimized/785bb1225647189f-800.webp 800w, /optimized/4f7c44f47358edcd-1280.webp 1280w, /optimized/dc5f35fa7a3dcab5-1600.webp 1600w"
+  },
+  "/photos/learning.jpg": {
+    "src": "/optimized/71b1633d762ae93a-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/f5cc531c4973c732-480.webp 480w, /optimized/71b1633d762ae93a-800.webp 800w, /optimized/b488f34805d8fb39-1280.webp 1280w, /optimized/1c3847626a67274f-1600.webp 1600w"
+  },
+  "/photos/session.jpg": {
+    "src": "/optimized/c2cb34958d86f529-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/114e4f6710d0bd49-480.webp 480w, /optimized/c2cb34958d86f529-800.webp 800w, /optimized/118a894aae2e4c81-1280.webp 1280w, /optimized/0a740c21eb88325d-1600.webp 1600w"
+  },
+  "/photos/speaker.jpg": {
+    "src": "/optimized/0d948c1c099f765d-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/42c907cec3c007f8-480.webp 480w, /optimized/0d948c1c099f765d-800.webp 800w, /optimized/9b7db29b689f53b8-1280.webp 1280w, /optimized/8aee090807d0ae52-1600.webp 1600w"
+  },
+  "/photos/stage-moment.jpg": {
+    "src": "/optimized/e24d6f0c6ce0168b-800.webp",
+    "width": 5184,
+    "height": 3456,
+    "srcSet": "/optimized/1b14f3d761d545c6-480.webp 480w, /optimized/e24d6f0c6ce0168b-800.webp 800w, /optimized/f2acfecb0ba27e76-1280.webp 1280w, /optimized/0ef5a6e162a939a2-1600.webp 1600w"
+  },
+  "/photos/team.jpg": {
+    "src": "/optimized/afebaa79221708e7-800.webp",
+    "width": 5039,
+    "height": 3144,
+    "srcSet": "/optimized/6d8f2eef8cc32b17-480.webp 480w, /optimized/afebaa79221708e7-800.webp 800w, /optimized/436e722a0283e36b-1280.webp 1280w, /optimized/387a707211357e1d-1600.webp 1600w"
+  }
+}

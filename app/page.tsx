@@ -4,6 +4,7 @@ import { SiteFooter } from '@/components/site-footer';
 import { StoriesPreview } from '@/components/stories-preview';
 import { ValueAssessment } from '@/components/value-assessment';
 import { AttendeeStories } from '@/components/attendee-stories';
+import { SiteImage } from '@/components/site-image';
 
 const SELAR_TICKET_URL = 'https://selar.com/817383or48';
 const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
@@ -139,8 +140,9 @@ export default function Home() {
       <SiteHeader />
 
       <section className="hero" id="top">
-        <img
+        <SiteImage
           className="hero-image"
+          priority
           src="/eitda-community.jpg"
           alt="Young people gathered at the first Earning in the Digital Age edition in December 2025"
         />
@@ -225,9 +227,10 @@ export default function Home() {
         <div className="track-list">
           {tracks.map((track) => (
             <article className="track-card" key={track.number}>
-              <img
+              <SiteImage
                 src={track.image}
                 alt={track.alt}
+                sizes="(max-width: 820px) 100vw, 33vw"
                 loading="lazy"
                 decoding="async"
               />
@@ -491,9 +494,10 @@ export default function Home() {
         <div className="gallery-grid">
           {galleryPhotos.map((photo) => (
             <figure className={photo.className} key={photo.src}>
-              <img
+              <SiteImage
                 src={photo.src}
                 alt={photo.alt}
+                sizes="(max-width: 620px) 100vw, (max-width: 820px) 50vw, 45vw"
                 loading="lazy"
                 decoding="async"
               />
@@ -506,8 +510,9 @@ export default function Home() {
 
       <section className="community" id="impact">
         <div className="community-image-wrap">
-          <img
+          <SiteImage
             src="/photos/team.jpg"
+            sizes="(max-width: 820px) 100vw, 50vw"
             alt="The EITDA organising team at the first edition in December 2025"
             loading="lazy"
             decoding="async"
@@ -610,7 +615,7 @@ export default function Home() {
       </section>
 
       <section className="closing">
-        <img
+        <SiteImage
           className="closing-image"
           src="/drive-stories/e-4.jpg"
           alt=""

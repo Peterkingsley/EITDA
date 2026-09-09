@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
+import { SiteImage } from '@/components/site-image';
 import { notFound } from 'next/navigation';
 import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import {
@@ -22,9 +22,6 @@ export async function generateMetadata({
   const { slug } = await params;
   const story = getStory(slug);
   if (!story) notFound();
-  const relatedStories = getPublishedStories()
-    .filter((candidate) => candidate.slug !== story.slug && candidate.category === story.category)
-    .slice(0, 2);
   const title = `${story.title} | EITDA`;
   const image = new URL(story.image.src, SITE_URL).href;
   return {
@@ -53,6 +50,9 @@ export default async function StoryPage({ params }: StoryPageProps) {
   const { slug } = await params;
   const story = getStory(slug);
   if (!story) notFound();
+  const relatedStories = getPublishedStories()
+    .filter((candidate) => candidate.slug !== story.slug && candidate.category === story.category)
+    .slice(0, 2);
 
   return (
     <main id="blog-main">
@@ -74,11 +74,10 @@ export default async function StoryPage({ params }: StoryPageProps) {
         </header>
         <figure className="story-cover stories-container">
           <div className="story-cover-image">
-            <Image
+            <SiteImage
               src={story.image.src}
               alt={story.image.alt}
               fill
-              unoptimized
               priority
               sizes="(max-width: 820px) 100vw, 88vw"
             />

@@ -1,16 +1,17 @@
 import { ArrowUpRight } from 'lucide-react';
-import Image from 'next/image';
+import { SiteImage } from '@/components/site-image';
 
 export function SiteHeader({ solid = false }: { solid?: boolean }) {
   return (
     <header className={`site-header${solid ? ' site-header-solid' : ''}`}>
       <a className="brand" href="/" aria-label="EITDA home">
-        <Image
+        <SiteImage
           src="/eshiet-foundation-full-logo.png"
           alt="Eshiet Foundation"
           width={600}
           height={200}
-          unoptimized
+          sizes="(max-width: 520px) 84px, (max-width: 820px) 94px, 112px"
+          loading="eager"
         />
         <span>
           <strong>EITDA</strong>

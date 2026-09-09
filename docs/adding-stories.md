@@ -4,7 +4,7 @@ Stories are maintained in [`content/stories.ts`](../content/stories.ts). There i
 
 ## Add a story
 
-1. Put the cover image in `public/photos/` (or another folder inside `public/`). Use an appropriately compressed image, ideally at least 1200 pixels wide.
+1. Put the cover image in `public/photos/` (or another folder inside `public/`). Use an image at least 1200 pixels wide. Development and production builds automatically generate smaller WebP versions for different screen sizes; keep the original path in the story data.
 2. Copy the object below into the `stories` array in `content/stories.ts`.
 3. Give it a unique, lowercase, hyphenated `slug`. Keep published slugs stable so existing links continue to work.
 4. Add the title, summary, author, date, image description and article sections. Each paragraph is a separate string. Optional `points` render as a bulleted list. Optional `sources` render as linked references.
@@ -56,5 +56,7 @@ Only use images and quotations you are authorised to publish. When writing about
 ## Check your story
 
 Run `npm run dev` and visit `/blog` and your article's URL. Check the copy, cover image and source links. Run `npm run build` before deploying. Story edits appear in the development server immediately; the live site updates only after deployment.
+
+If you add a photo while the development server is already running, run `npm run optimize:images` to refresh `lib/image-manifest.json` and `public/optimized/`. Commit those generated files with the story. The build also runs TypeScript checks so missing variables cannot silently reach production. After a build, run `npm start` and, in another terminal, `npm run test:smoke` to check every published story and its responsive images.
 
 If the website uses a different canonical domain, set `NEXT_PUBLIC_SITE_URL` to that origin (for example, `https://your-domain.com`) before building. It controls canonical and social-image URLs. The default is the existing EITDA Sites origin.

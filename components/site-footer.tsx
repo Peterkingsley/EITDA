@@ -1,16 +1,16 @@
-import Image from 'next/image';
+import { SiteImage } from '@/components/site-image';
 
 export function SiteFooter() {
   return (
     <footer>
       <div className="footer-top">
         <div className="footer-brand">
-          <Image
+          <SiteImage
             src="/eshiet-foundation-full-logo.png"
             alt="Eshiet Foundation"
             width={600}
             height={200}
-            unoptimized
+            sizes="(max-width: 520px) 148px, 170px"
           />
 
           <div>

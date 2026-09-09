@@ -1,5 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
-import Image from 'next/image';
+import { SiteImage } from '@/components/site-image';
 import {
   formatStoryDate,
   getReadingMinutes,
@@ -19,11 +19,10 @@ export function StoryCard({
     <article className={`story-card${featured ? ' story-card-featured' : ''}`}>
       <a className="story-card-link" href={`/blog/${story.slug}`}>
         <div className="story-card-image">
-          <Image
+          <SiteImage
             src={story.image.src}
             alt={story.image.alt}
             fill
-            unoptimized
             sizes={
               featured
                 ? '(max-width: 820px) 100vw, 55vw'

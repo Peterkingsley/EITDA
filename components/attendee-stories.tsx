@@ -1,3 +1,5 @@
+import { SiteImage } from '@/components/site-image';
+
 const reflections = [
   {
     image: '/photos/host.jpg',
@@ -35,7 +37,7 @@ export function AttendeeStories() {
       <div className="attendee-story-grid">
         {reflections.map((reflection) => (
           <article className="attendee-story-card" key={reflection.title}>
-            <img src={reflection.image} alt={reflection.alt} loading="lazy" decoding="async" />
+            <SiteImage src={reflection.image} alt={reflection.alt} sizes="(max-width: 820px) 100vw, 33vw" />
             <div>
               <span>{reflection.role}</span>
               <h3>{reflection.title}</h3>

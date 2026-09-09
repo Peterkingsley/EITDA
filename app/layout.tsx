@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist } from 'next/font/google';
 import './globals.css';
 import { SITE_URL } from '@/lib/site';
 
@@ -8,17 +8,12 @@ const geistSans = Geist({
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
   metadataBase: SITE_URL,
   title: 'EITDA — Earning in the Digital Age',
   description:
     'The second edition of EITDA takes place 28 November 2026 at Women War Memorial, Ikot Abasi, Akwa Ibom. General admission is free and VIP tickets are ₦15,000.',
-  icons: { icon: '/eshiet-foundation-logo.png' },
+  icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'EITDA — Earning in the Digital Age',
     description:
@@ -43,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} antialiased`}
       >
         {children}
       </body>
