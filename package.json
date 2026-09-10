@@ -13,6 +13,8 @@
     "build": "vinext build",
     "typecheck": "tsc --noEmit --incremental false",
     "test:smoke": "node scripts/smoke-test.mjs",
+    "build:apps-script": "node scripts/build-apps-script.mjs",
+    "seed:impact": "node scripts/seed-impact.mjs",
     "start": "vinext start",
     "lint": "oxlint",
     "format": "oxfmt"
