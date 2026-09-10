@@ -1,0 +1,14 @@
+import { writeFile } from 'node:fs/promises';
+if (process.env.EITDA_DATA_MODE === 'google_sheets' || process.env.NODE_ENV === 'production') throw new Error('Seeding is development-only. No remote data is ever written.');
+const count = Number(process.argv.find(arg => arg.startsWith('--count='))?.split('=')[1] || 24);
+if (!Number.isInteger(count) || count < 0 || count > 2000) throw new Error('Use a count from 0 to 2000.');
+const profiles = [['Grace','Teacher',17],['Emeka','Banker',8],['Aisha','Accountant',12],['Bassey','Civil Servant',21],['Ngozi','Business Owner',9],['Fatima','Healthcare Professional',14],['Uduak','Lecturer',18],['Chidi','Engineer',11],['Amaka','Creative',6],['Tunde','Artisan',23],['Mary','Lawyer',13],['Ibrahim','Entrepreneur',7],['Ekaette','Sales Professional',10],['Bola','Marketing Professional',8],['Ini','Teacher',22],['Zainab','Healthcare Professional',16],['Femi','Business Owner',19],['Esther','Accountant',5],['Usman','Civil Servant',28],['Blessing','Lecturer',15],['Damilola','Engineer',4],['Nse','Artisan',31],['Ada','Banker',12],['Seyi','Creative',3]];
+const joined = '2026-09-10T09:00:00.000Z';
+const advocates = [
+  {advocate_id:'demo-advocate-1',impact_code:'DEMOONE1',first_name:'Kingsley',last_name:'Example',email:'kingsley@example.invalid',phone:'+2348000000001',city:'Ikot Abasi',country:'Nigeria',status:'active',date_joined:joined,recognition_consent:true,demo_token:'1'.repeat(64)},
+  {advocate_id:'demo-advocate-2',impact_code:'DEMOONE2',first_name:'Amaka',last_name:'Example',email:'amaka@example.invalid',phone:'+2348000000002',city:'Uyo',country:'Nigeria',status:'active',date_joined:joined,recognition_consent:true,demo_token:'2'.repeat(64)},
+  {advocate_id:'demo-advocate-3',impact_code:'DEMOZERO',first_name:'Daniel',last_name:'Example',email:'daniel@example.invalid',phone:'+2348000000003',city:'Lagos',country:'Nigeria',status:'active',date_joined:joined,recognition_consent:false,demo_token:'3'.repeat(64)},
+];
+const people = Array.from({length:count}, (_,i) => { const p = profiles[i % profiles.length]; return {person_id:`demo-person-${i+1}`,advocate_code:i % 3 ? 'DEMOONE1':'DEMOONE2',first_name:p[0],profession:p[1],years_experience:p[2],outside_income:'Not yet',known_for:'A fictional example used to demonstrate the campaign.',discovery_goal:'Where my experience is valuable',email:'',phone:'',city:'',country:'Nigeria',registration_status:'experience_completed',ticket_status:i % 4 === 0 ? 'confirmed':'not_started',public_display_consent:i % 3 !== 0,date_added:joined,person_number:i+1,featured:i===1,story_collected:false,outcome_recorded:false}; });
+await writeFile(new URL('../content/impact-mock.json',import.meta.url), JSON.stringify({description:'Fictional local demonstration records. Never import into the live campaign.',advocates,people},null,2)+'\n');
+console.log(`Wrote ${count} fictional people to content/impact-mock.json. No live service was contacted.`);
