@@ -37,4 +37,4 @@ export function analytics(name: AnalyticsName, details: {channel?:string; milest
 export function activity(event_type: string, code = '', channel?: string) {
   void api('trackEvent',{event_type,advocate_code:code,channel,submission_id:crypto.randomUUID()},'POST').catch(() => { /* Optional analytics must not block the person's journey. */ });
 }
-export function publicLink(code: string) { return `${window.location.origin}/impact/${code}`; }
+export function publicLink(code: string) { return `${window.location.origin}/one-person/${code}`; }
