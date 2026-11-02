@@ -11,6 +11,10 @@ npm run dev
 
 Create a production build with `npm run build`.
 
+## Speakers
+
+Add confirmed hosts, co-hosts, speakers and panelists in [`content/speakers.ts`](content/speakers.ts), with their reveal artwork in `public/speakers`. The homepage displays the lineup and a notice for upcoming announcements. Responsive image variants are generated automatically during development and builds.
+
 ## Stories
 
 The blog lives at `/blog`, with individual articles at `/blog/[slug]` and a latest-stories section on the homepage. Add and edit stories directly in [`content/stories.ts`](content/stories.ts). Only stories marked `published` appear on the site.

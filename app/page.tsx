@@ -5,6 +5,7 @@ import { StoriesPreview } from '@/components/stories-preview';
 import { ValueAssessment } from '@/components/value-assessment';
 import { AttendeeStories } from '@/components/attendee-stories';
 import { SiteImage } from '@/components/site-image';
+import { speakers } from '@/content/speakers';
 
 const SELAR_TICKET_URL = 'https://selar.com/817383or48';
 const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
@@ -45,27 +46,6 @@ const pathway = [
   {
     step: 'A Practical Next Move',
     copy: 'You will leave with a clearer offer, positioning, outreach direction or career path you can start acting on immediately.',
-  },
-];
-
-const speakerTeasers = [
-  {
-    number: '01',
-    note: 'Founder / Operator',
-    prompt: 'Who do you think this is?',
-  },
-  { number: '02', note: 'Industry Professional', prompt: 'Revealing soon' },
-  {
-    number: '03',
-    note: 'Builder / Advisor',
-    prompt: 'Speaker reveal coming soon',
-  },
-  { number: '04', note: 'Market Expert', prompt: 'Who is joining the room?' },
-  { number: '05', note: 'Founder / Operator', prompt: 'Revealing soon' },
-  {
-    number: '06',
-    note: 'Industry Professional',
-    prompt: 'Speaker reveal coming soon',
   },
 ];
 
@@ -389,7 +369,7 @@ export default function Home() {
       >
         <div className="speaker-reveal-heading">
           <p className="eyebrow">
-            <span /> Speaker reveals · Coming soon
+            <span /> Meet the EITDA 2026 lineup
           </p>
 
           <h2 id="speaker-reveal-title">
@@ -399,43 +379,41 @@ export default function Home() {
           </h2>
 
           <p>
-            Founders, operators and professionals with real experience turning
-            knowledge into market value will be joining EITDA 2026. Speaker
-            announcements begin soon.
+            Meet the speakers, panelists and co-hosts joining EITDA 2026 to
+            explore how experience becomes market value. More speakers and
+            panelists will be announced soon.
           </p>
         </div>
 
         <div
-          className="speaker-marquee"
-          aria-label="EITDA 2026 speaker announcements coming soon"
+          className="speaker-grid"
+          aria-label="EITDA 2026 speakers, panelists and co-hosts"
         >
-          <div className="speaker-marquee-track">
-            {[...speakerTeasers, ...speakerTeasers].map((speaker, index) => (
-              <article
-                className="speaker-teaser-card"
-                key={`${speaker.number}-${index}`}
-                aria-hidden={index >= speakerTeasers.length}
-              >
-                <div className="speaker-silhouette" aria-hidden="true">
-                  <span className="speaker-head" />
-                  <span className="speaker-body" />
-                </div>
+          {speakers.map((speaker) => (
+            <article className="speaker-card" key={speaker.name}>
+              <SiteImage
+                className="speaker-poster"
+                src={speaker.image}
+                alt={`EITDA 2026 ${speaker.role.toLowerCase()} reveal poster for ${speaker.name}`}
+                sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 1000px) 44vw, 29vw"
+              />
 
-                <div className="speaker-card-overlay" aria-hidden="true" />
+              <div className="speaker-card-copy">
+                <small>{speaker.role}</small>
+                <h3>{speaker.name}</h3>
+                <p>{speaker.title}</p>
+              </div>
+            </article>
+          ))}
 
-                <div className="speaker-card-top">
-                  <span>Speaker {speaker.number}</span>
-                  <b>?</b>
-                </div>
-
-                <div className="speaker-card-copy">
-                  <small>{speaker.note}</small>
-                  <h3>{speaker.prompt}</h3>
-                  <span>Announcement coming soon</span>
-                </div>
-              </article>
-            ))}
-          </div>
+          <article className="speaker-card speaker-coming-soon">
+            <span className="speaker-coming-soon-mark" aria-hidden="true">+</span>
+            <div className="speaker-card-copy">
+              <small>The lineup is growing</small>
+              <h3>More voices.<br />More possibilities.</h3>
+              <p>More speakers and panelists will be announced soon.</p>
+            </div>
+          </article>
         </div>
 
       </section>

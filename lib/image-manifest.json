@@ -166,5 +166,35 @@
     "width": 5039,
     "height": 3144,
     "srcSet": "/optimized/6d8f2eef8cc32b17-480.webp 480w, /optimized/afebaa79221708e7-800.webp 800w, /optimized/436e722a0283e36b-1280.webp 1280w, /optimized/387a707211357e1d-1600.webp 1600w"
+  },
+  "/speakers/dikachi.png": {
+    "src": "/optimized/18bfd6054df6e2c0-800.webp",
+    "width": 1501,
+    "height": 1500,
+    "srcSet": "/optimized/5f0fa536aec6cf57-480.webp 480w, /optimized/18bfd6054df6e2c0-800.webp 800w, /optimized/39771162df0fd737-1280.webp 1280w, /optimized/0ced31e2725fa638-1501.webp 1501w"
+  },
+  "/speakers/ekene-eze.png": {
+    "src": "/optimized/257ddf41dc67602d-800.webp",
+    "width": 1500,
+    "height": 1500,
+    "srcSet": "/optimized/2acecccd575c5c5b-480.webp 480w, /optimized/257ddf41dc67602d-800.webp 800w, /optimized/01f2f039192a1c21-1280.webp 1280w, /optimized/1664fbd8d45f12b1-1500.webp 1500w"
+  },
+  "/speakers/eshiet-owoabasi.png": {
+    "src": "/optimized/aac5ea931c4e3610-800.webp",
+    "width": 1501,
+    "height": 1500,
+    "srcSet": "/optimized/2a91e8778efca326-480.webp 480w, /optimized/aac5ea931c4e3610-800.webp 800w, /optimized/0ea411fd2a1eb04b-1280.webp 1280w, /optimized/0980dad53fe573de-1501.webp 1501w"
+  },
+  "/speakers/john-miracle.png": {
+    "src": "/optimized/c8785d55414a66f6-800.webp",
+    "width": 1500,
+    "height": 1501,
+    "srcSet": "/optimized/9fa92e7fe34d5717-480.webp 480w, /optimized/c8785d55414a66f6-800.webp 800w, /optimized/27032f203dfc40d3-1280.webp 1280w, /optimized/397f05971856513c-1500.webp 1500w"
+  },
+  "/speakers/okon-abasiono.png": {
+    "src": "/optimized/7e138095c43b4e57-800.webp",
+    "width": 1501,
+    "height": 1500,
+    "srcSet": "/optimized/97e5822bc264494f-480.webp 480w, /optimized/7e138095c43b4e57-800.webp 800w, /optimized/6c22427eaa1e2d4e-1280.webp 1280w, /optimized/6c5f91d989eb6d9c-1501.webp 1501w"
   }
 }
