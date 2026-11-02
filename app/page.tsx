@@ -5,7 +5,7 @@ import { StoriesPreview } from '@/components/stories-preview';
 import { ValueAssessment } from '@/components/value-assessment';
 import { AttendeeStories } from '@/components/attendee-stories';
 import { SiteImage } from '@/components/site-image';
-import { speakers } from '@/content/speakers';
+import { SpeakersMarquee } from '@/components/speakers-marquee';
 
 const SELAR_TICKET_URL = 'https://selar.com/817383or48';
 const SELAR_VIP_URL = 'https://selar.com/8d08851l58';
@@ -385,36 +385,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div
-          className="speaker-grid"
-          aria-label="EITDA 2026 speakers, panelists and co-hosts"
-        >
-          {speakers.map((speaker) => (
-            <article className="speaker-card" key={speaker.name}>
-              <SiteImage
-                className="speaker-poster"
-                src={speaker.image}
-                alt={`EITDA 2026 ${speaker.role.toLowerCase()} reveal poster for ${speaker.name}`}
-                sizes="(max-width: 620px) calc(100vw - 44px), (max-width: 1000px) 44vw, 29vw"
-              />
-
-              <div className="speaker-card-copy">
-                <small>{speaker.role}</small>
-                <h3>{speaker.name}</h3>
-                <p>{speaker.title}</p>
-              </div>
-            </article>
-          ))}
-
-          <article className="speaker-card speaker-coming-soon">
-            <span className="speaker-coming-soon-mark" aria-hidden="true">+</span>
-            <div className="speaker-card-copy">
-              <small>The lineup is growing</small>
-              <h3>More voices.<br />More possibilities.</h3>
-              <p>More speakers and panelists will be announced soon.</p>
-            </div>
-          </article>
-        </div>
+        <SpeakersMarquee />
 
       </section>
 

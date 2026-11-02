@@ -718,16 +718,60 @@ summary:focus-visible {
   line-height: 1.65;
 }
 
-.speaker-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.speaker-marquee {
+  --speaker-card-width: clamp(260px, 26vw, 360px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.speaker-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: speaker-slide-left 96s linear infinite;
+  will-change: transform;
+}
+
+.speaker-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
   gap: 24px;
+  padding-right: 24px;
+}
+
+@keyframes speaker-slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.speaker-marquee-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px auto 0;
   max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 clamp(22px, 6vw, 96px);
+  padding-inline: clamp(22px, 6vw, 96px);
+}
+
+.speaker-marquee-controls button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: var(--white);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.speaker-marquee-controls button:focus-visible,
+.speaker-marquee:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: -2px;
 }
 
 .speaker-card {
+  flex: 0 0 var(--speaker-card-width);
+  width: var(--speaker-card-width);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: #0b1222;
@@ -782,12 +826,6 @@ summary:focus-visible {
   font-size: 100px;
   font-weight: 300;
   line-height: 1;
-}
-
-@media (max-width: 1000px) {
-  .speaker-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 .pathway {
@@ -2176,9 +2214,8 @@ footer nav a:hover {
   .speaker-reveal-heading > p:last-child {
     font-size: 15px;
   }
-  .speaker-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
+  .speaker-marquee {
+    --speaker-card-width: min(78vw, 300px);
   }
   .ticket-card {
     min-height: 0;
@@ -2274,6 +2311,17 @@ footer nav a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .speaker-marquee {
+    overflow-x: auto;
+  }
+  .speaker-marquee-track {
+    animation: none;
+    will-change: auto;
+  }
+  .speaker-marquee-group[aria-hidden='true'],
+  .speaker-marquee-controls {
+    display: none;
+  }
   html {
     scroll-behavior: auto;
   }
