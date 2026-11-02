@@ -722,33 +722,36 @@ summary:focus-visible {
   --speaker-card-width: clamp(260px, 26vw, 360px);
   overflow: hidden;
   width: 100%;
+  touch-action: pan-y pinch-zoom;
+  cursor: grab;
+  user-select: none;
+}
+
+.speaker-marquee:active {
+  cursor: grabbing;
 }
 
 .speaker-marquee-track {
   display: flex;
-  width: max-content;
-  animation: speaker-slide-left 96s linear infinite;
-  will-change: transform;
-}
-
-.speaker-marquee-group {
-  display: flex;
-  flex: 0 0 auto;
   gap: 24px;
-  padding-right: 24px;
-}
-
-@keyframes speaker-slide-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  will-change: transform;
 }
 
 .speaker-marquee-controls {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: flex-end;
   margin: 22px auto 0;
   max-width: 1600px;
   padding-inline: clamp(22px, 6vw, 96px);
+}
+
+.speaker-marquee-controls > span {
+  margin-right: auto;
+  color: #c6cfdf;
+  font-size: 12px;
 }
 
 .speaker-marquee-controls button {
@@ -756,6 +759,7 @@ summary:focus-visible {
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
+  min-height: 44px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: transparent;
   color: var(--white);
@@ -2311,15 +2315,10 @@ footer nav a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .speaker-marquee {
-    overflow-x: auto;
-  }
   .speaker-marquee-track {
-    animation: none;
     will-change: auto;
   }
-  .speaker-marquee-group[aria-hidden='true'],
-  .speaker-marquee-controls {
+  .speaker-marquee-controls .speaker-pause {
     display: none;
   }
   html {
